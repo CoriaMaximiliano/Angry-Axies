@@ -1,132 +1,54 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Angry Axies — juego tipo Angry Birds en navegador y Android. Campaña, ranking y PvP en línea." />
-  <title>Angry Axies — Juego en navegador y Android</title>
-  <style>
-    :root {
-      --bg: #0a0d14;
-      --text: #e8eaef;
-      --muted: #b8c0d0;
-      --accent: #3dd66a;
-      --accent-dim: #2a3548;
-      --link: #7eb8ff;
-    }
-    * { box-sizing: border-box; }
-    body {
-      font-family: "Segoe UI", system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      margin: 0;
-      min-height: 100vh;
-      line-height: 1.6;
-    }
-    .wrap { max-width: 42rem; margin: 0 auto; padding: 2rem 1.25rem 3rem; }
-    .badge {
-      display: inline-block;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-      color: var(--accent);
-      background: rgba(61, 214, 106, 0.12);
-      border: 1px solid rgba(61, 214, 106, 0.35);
-      border-radius: 999px;
-      padding: 0.25rem 0.65rem;
-      margin-bottom: 0.75rem;
-    }
-    h1 {
-      font-size: clamp(1.6rem, 4vw, 2rem);
-      margin: 0 0 0.75rem;
-      font-weight: 800;
-      line-height: 1.2;
-    }
-    .lead { font-size: 1.05rem; color: var(--muted); margin: 0 0 1.5rem; }
-    p { margin: 0 0 1rem; color: var(--muted); }
-    code {
-      background: #1a2230;
-      padding: 0.12em 0.35em;
-      border-radius: 4px;
-      font-size: 0.92em;
-    }
-    .actions { display: flex; flex-wrap: wrap; gap: 0.65rem; margin: 1.25rem 0 1.75rem; }
-    a.btn {
-      display: inline-block;
-      padding: 0.85rem 1.25rem;
-      background: var(--accent);
-      color: #0a0d14 !important;
-      text-decoration: none;
-      border-radius: 10px;
-      font-weight: 700;
-      font-size: 0.95rem;
-    }
-    a.btn.secondary {
-      background: var(--accent-dim);
-      color: var(--text) !important;
-    }
-    a.btn:hover { filter: brightness(1.08); }
-    .card {
-      background: #121824;
-      border: 1px solid #1e2838;
-      border-radius: 12px;
-      padding: 1.1rem 1.15rem;
-      margin-bottom: 1rem;
-    }
-    .card h2 {
-      font-size: 0.95rem;
-      margin: 0 0 0.5rem;
-      color: var(--text);
-    }
-    ul { margin: 0; padding-left: 1.2rem; color: var(--muted); }
-    li { margin-bottom: 0.35rem; }
-    footer { margin-top: 2rem; font-size: 0.9rem; }
-    footer a { color: var(--link); }
-  </style>
+  <meta name="description" content="Angry Axies — Angry Birds-style game in browser and Android. Campaign, leaderboard, and online PvP." />
+  <title>Angry Axies — Browser &amp; Android Game</title>
+  <link rel="stylesheet" href="./site.css" />
 </head>
-<body>
+<body data-page="index">
   <div class="wrap">
-    <span class="badge">Versión 1.008</span>
+    <span class="badge" data-i18n="index.badge">Version 1.008</span>
     <h1>Angry Axies</h1>
-    <p class="lead">
-      Lanzá Axies con física real, destruí estructuras y competí en ranking y PvP.
-      Jugá en el navegador o instalá la app Android.
+    <p class="lead" data-i18n="index.lead">
+      Launch Axies with real physics, smash structures, and compete in leaderboards and PvP. Play in your browser or install the Android app.
     </p>
 
     <div class="actions">
-      <a class="btn" href="http://216.238.71.48/" rel="noopener noreferrer">Jugar en el navegador</a>
-      <a class="btn secondary" href="./descarga-apk.html">Descargar APK (Android)</a>
+      <a class="btn" href="http://216.238.71.48/" rel="noopener noreferrer" data-i18n="index.btn.play">Play in browser</a>
+      <a class="btn secondary" href="./descarga-apk.html" data-i18n="index.btn.apk">Download APK (Android)</a>
     </div>
 
     <div class="card">
-      <h2>Qué incluye</h2>
+      <h2 data-i18n="index.features.title">What's included</h2>
       <ul>
-        <li>Campaña y niveles con física Matter.js</li>
-        <li>Ranking global y nombre de jugador</li>
-        <li>PvP en línea contra otros jugadores</li>
-        <li>Integración con wallet Ronin (opcional)</li>
-        <li>Varios idiomas: español, inglés, japonés, filipino</li>
+        <li data-i18n="index.features.1">Campaign and levels with Matter.js physics</li>
+        <li data-i18n="index.features.2">Global leaderboard and player name</li>
+        <li data-i18n="index.features.3">Online PvP against other players</li>
+        <li data-i18n="index.features.4">Ronin wallet integration (optional)</li>
+        <li data-i18n="index.features.5">Multiple languages: English, Spanish, Filipino, Chinese</li>
       </ul>
     </div>
 
     <div class="card">
-      <h2>Comunidad</h2>
+      <h2 data-i18n="index.community.title">Community</h2>
       <p style="margin:0">
-        Unite al Discord:
+        <span data-i18n="index.community.text">Join us on Discord:</span>
         <a href="https://discord.gg/xJV6UAV38c" rel="noopener noreferrer" style="color:var(--link)">discord.gg/xJV6UAV38c</a>
       </p>
     </div>
 
     <footer>
       <p>
-        Servidor de juego:
+        <span data-i18n="index.footer.server">Game server:</span>
         <a href="http://216.238.71.48/" rel="noopener noreferrer">216.238.71.48</a>
       </p>
       <p>
-        <a href="./descarga-apk.html">Instrucciones de instalación Android</a>
+        <a href="./descarga-apk.html" data-i18n="index.footer.install">Android installation instructions</a>
       </p>
     </footer>
   </div>
+  <script src="./i18n.js"></script>
 </body>
 </html>
