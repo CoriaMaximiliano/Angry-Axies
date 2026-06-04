@@ -1,0 +1,29 @@
+Notas para quien publica la APK (vos o alguien del equipo)
+
+Sitio público: https://coriamaximiliano.github.io/Angry-Axies/
+Página de descarga: https://coriamaximiliano.github.io/Angry-Axies/descarga-apk.html
+Repo: https://github.com/CoriaMaximiliano/Angry-Axies
+
+En cada release en GitHub subí SOLO la APK con nombre fijo:
+  AngryAxies-1.008.apk   (cambiá el número según public/game-version.json)
+
+NO subas la APK al repo en la rama main (pesa ~47 MB). Usá Releases.
+
+Flujo al publicar una versión nueva:
+  1) En el proyecto del juego: npm run android:apk
+  2) La APK debug queda en:
+       android/app/build/outputs/apk/debug/Angry Axies.apk
+     (o app-debug.apk según el build)
+  3) Copiala y renombrala a AngryAxies-X.XXX.apk (sin espacios).
+  4) En GitHub → repo Angry-Axies → Releases → Draft a new release
+     - Tag: mismo número de versión (ej. 1.008)
+     - Title: Angry Axies 1.008
+     - Adjuntá AngryAxies-1.008.apk en Assets
+  5) Actualizá descarga-apk.html e index.html si cambió el número de versión.
+  6) git commit + push a main → GitHub Actions publica la web.
+
+Carpeta local release-assets/:
+  Contiene la APK lista para subir a la release (no va a git; ver .gitignore).
+
+Deploy de la web:
+  Push a main dispara .github/workflows/deploy.yml (GitHub Pages estático).

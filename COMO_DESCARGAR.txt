@@ -1,0 +1,17 @@
+Angry Axies — Android (APK)
+
+En GitHub la APK se publica en Releases, no en la carpeta principal del repo.
+
+Opción A — Desde la web
+1) Entrá acá y seguí el botón de descarga:
+   https://coriamaximiliano.github.io/Angry-Axies/descarga-apk.html
+2) Abrí el .apk en el celular e instalá.
+3) Si pide permiso, activá «orígenes desconocidos» solo para ese instalador.
+
+Opción B — Manual en GitHub
+1) Abrí la última release: https://github.com/CoriaMaximiliano/Angry-Axies/releases/latest
+2) Bajá AngryAxies-1.008.apk (o la versión que figure en Assets).
+3) Instalá y abrí «Angry Axies».
+
+Jugar en PC o navegador del celular (sin APK):
+  https://angryaxies.servehttp.com

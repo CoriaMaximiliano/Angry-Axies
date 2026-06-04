@@ -1,0 +1,4 @@
+release-assets/
+*.apk
+.DS_Store
+Thumbs.db
