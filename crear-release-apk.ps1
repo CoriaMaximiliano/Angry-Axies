@@ -17,7 +17,7 @@ $releaseBody = @{
 APK Android para Angry Axies v1.008.
 
 Instalacion: https://coriamaximiliano.github.io/Angry-Axies/descarga-apk.html
-Jugar en navegador: https://angryaxies.servehttp.com
+Jugar en navegador: http://216.238.71.48/
 "@
   draft       = $false
   prerelease  = $false

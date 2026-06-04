@@ -4,7 +4,7 @@ Página pública para jugar en el navegador y descargar la APK Android.
 
 - **Sitio:** https://coriamaximiliano.github.io/Angry-Axies/
 - **APK:** https://coriamaximiliano.github.io/Angry-Axies/descarga-apk.html
-- **Juego en línea:** https://angryaxies.servehttp.com
+- **Juego en línea:** http://216.238.71.48/
 
 ## Publicar cambios en la web
 
