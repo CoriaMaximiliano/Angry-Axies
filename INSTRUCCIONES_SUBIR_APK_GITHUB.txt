@@ -9,7 +9,11 @@ En cada release en GitHub subí SOLO la APK con nombre fijo:
 
 NO subas la APK al repo en la rama main (pesa ~47 MB). Usá Releases.
 
-Flujo al publicar una versión nueva:
+Flujo al publicar una versión nueva (recomendado):
+  0) Desde la raíz del juego: npm run deploy:server && npm run android:aab
+  1) Publicar sitio + APK en GitHub: npm run github:publish
+
+Flujo manual:
   1) En el proyecto del juego: npm run android:apk
   2) La APK debug queda en:
        android/app/build/outputs/apk/debug/Angry Axies.apk

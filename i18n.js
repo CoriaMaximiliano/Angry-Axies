@@ -55,7 +55,7 @@
       "download.server":
         "The app bundles the same game as the browser and connects to <code>angryaxies.servehttp.com</code> for leaderboard, health, and PvP.",
       "download.web":
-        '<strong>Play without installing:</strong> use the web version at <a href="http://216.238.71.48/" style="color:#7eb8ff;">216.238.71.48</a> (best on PC; also works in mobile browsers).',
+        '<strong>Play without installing:</strong> use the web version at <a href="http://angryaxies.servehttp.com/" style="color:#7eb8ff;">angryaxies.servehttp.com</a> (best on PC; also works in mobile browsers).',
       "download.publisher":
         "<strong>Updates (for publishers):</strong> when you build a new APK with <code>npm run android:apk</code>, rename it to <code>AngryAxies-X.XXX.apk</code>, create a GitHub release with that tag, and update the links on this page.",
       "download.security":
@@ -107,7 +107,7 @@
       "download.server":
         "La app empaqueta el mismo juego que el navegador y se conecta al servidor en <code>angryaxies.servehttp.com</code> para ranking, health y PvP.",
       "download.web":
-        '<strong>Jugar sin instalar:</strong> podés usar la versión web en <a href="http://216.238.71.48/" style="color:#7eb8ff;">216.238.71.48</a> (ideal en PC; en móvil también funciona en el navegador).',
+        '<strong>Jugar sin instalar:</strong> podés usar la versión web en <a href="http://angryaxies.servehttp.com/" style="color:#7eb8ff;">angryaxies.servehttp.com</a> (ideal en PC; en móvil también funciona en el navegador).',
       "download.publisher":
         "<strong>Actualizaciones (quien publica):</strong> al generar una APK nueva con <code>npm run android:apk</code>, renombrala a <code>AngryAxies-X.XXX.apk</code>, creá una release en GitHub con ese tag y actualizá los enlaces en esta página.",
       "download.security":
@@ -159,7 +159,7 @@
       "download.server":
         "Pareho ang laro sa browser at kumokonekta sa <code>angryaxies.servehttp.com</code> para sa leaderboard, health, at PvP.",
       "download.web":
-        '<strong>Maglaro nang hindi nag-i-install:</strong> gamitin ang web version sa <a href="http://216.238.71.48/" style="color:#7eb8ff;">216.238.71.48</a> (mas mainam sa PC; gumagana rin sa mobile browser).',
+        '<strong>Maglaro nang hindi nag-i-install:</strong> gamitin ang web version sa <a href="http://angryaxies.servehttp.com/" style="color:#7eb8ff;">angryaxies.servehttp.com</a> (mas mainam sa PC; gumagana rin sa mobile browser).',
       "download.publisher":
         "<strong>Mga update (para sa publisher):</strong> kapag gumawa ng bagong APK gamit ang <code>npm run android:apk</code>, palitan ang pangalan sa <code>AngryAxies-X.XXX.apk</code>, gumawa ng GitHub release na may tag na iyon, at i-update ang mga link sa pahinang ito.",
       "download.security":
@@ -211,7 +211,7 @@
       "download.server":
         "应用与浏览器版为同一游戏，通过 <code>angryaxies.servehttp.com</code> 连接排行榜、health 与 PvP。",
       "download.web":
-        '<strong>无需安装即可游玩：</strong>使用网页版 <a href="http://216.238.71.48/" style="color:#7eb8ff;">216.238.71.48</a>（PC 体验更佳；手机浏览器也可）。',
+        '<strong>无需安装即可游玩：</strong>使用网页版 <a href="http://angryaxies.servehttp.com/" style="color:#7eb8ff;">angryaxies.servehttp.com</a>（PC 体验更佳；手机浏览器也可）。',
       "download.publisher":
         "<strong>更新说明（发布者）：</strong>使用 <code>npm run android:apk</code> 生成新 APK 后，重命名为 <code>AngryAxies-X.XXX.apk</code>，在 GitHub 创建对应 tag 的 release，并更新本页链接。",
       "download.security":

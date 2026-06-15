@@ -14,4 +14,4 @@ Opción B — Manual en GitHub
 3) Instalá y abrí «Angry Axies».
 
 Jugar en PC o navegador del celular (sin APK):
-  http://216.238.71.48/
+  http://angryaxies.servehttp.com/
