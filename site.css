@@ -213,7 +213,24 @@ a.btn.secondary {
   color: var(--text) !important;
 }
 
+a.btn.discord {
+  background: #5865f2;
+  color: #ffffff !important;
+}
+
+a.btn.discord:hover {
+  filter: brightness(1.1);
+}
+
 a.btn:hover { filter: brightness(1.08); }
+
+.actions--card {
+  margin-bottom: 0;
+}
+
+.actions--card .btn {
+  flex: 1 1 100%;
+}
 
 .card, .note {
   background: rgba(18, 24, 36, 0.65);
