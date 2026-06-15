@@ -21,6 +21,7 @@
       "index.lead":
         "Forge your fortress, manage your resources with cunning, and unleash tactical powers to overcome your enemies. Victory awaits those who master the art of strategy.",
       "index.btn.play": "Play in browser",
+      "index.btn.iphone": "iPhone",
       "index.btn.apk": "Download APK (Android)",
       "index.features.title": "What's included",
       "index.features.1": "Campaign and challenging levels",
@@ -75,6 +76,7 @@
       "index.lead":
         "Forjá tu fortaleza, gestioná tus recursos con astucia y desatá poderes tácticos para doblegar a tus enemigos. La victoria aguarda a quien domine el arte de la estrategia.",
       "index.btn.play": "Jugar en el navegador",
+      "index.btn.iphone": "iPhone",
       "index.btn.apk": "Descargar APK (Android)",
       "index.features.title": "Qué incluye",
       "index.features.1": "Campaña y niveles desafiantes",
@@ -129,6 +131,7 @@
       "index.lead":
         "Itayo ang iyong kuta, pamahalaan ang mga resources nang matalino, at ilabas ang mga tactical power para talunin ang mga kalaban. Ang tagumpay ay para sa mga master ng sining ng estratehiya.",
       "index.btn.play": "Maglaro sa browser",
+      "index.btn.iphone": "iPhone",
       "index.btn.apk": "I-download ang APK (Android)",
       "index.features.title": "Mga kasama",
       "index.features.1": "Campaign at mga mapaghamong level",
@@ -183,6 +186,7 @@
       "index.lead":
         "锻造你的要塞，精明管理资源，释放战术技能击败敌人。胜利属于掌握策略艺术的人。",
       "index.btn.play": "在浏览器中游玩",
+      "index.btn.iphone": "iPhone",
       "index.btn.apk": "下载 APK（Android）",
       "index.features.title": "游戏内容",
       "index.features.1": "战役与挑战关卡",

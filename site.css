@@ -99,14 +99,13 @@ body {
   padding-bottom: calc(4.75rem + var(--safe-bottom));
 }
 
-/* En inicio: espacio para el logo del fondo */
-.hero-banner {
-  min-height: clamp(9rem, 34vw, 15rem);
-  margin-bottom: clamp(0.5rem, 2vw, 1rem);
-  pointer-events: none;
+/* En inicio: espacio para el logo del fondo en móvil */
+@media (max-width: 640px) {
+  body[data-page="index"] .site-main {
+    padding-top: clamp(7rem, 32vw, 11rem);
+  }
 }
 
-/* Panel único: todo el texto legible sobre cualquier fondo */
 .site-panel {
   width: 100%;
   padding: clamp(1rem, 3.5vw, 1.75rem);
@@ -296,11 +295,6 @@ footer p:last-child,
     -1px 1px 0 #4a4034,
     1px 1px 0 #4a4034,
     0 2px 0 #2f2922;
-}
-
-/* Inicio: el fondo ya muestra el logo, no duplicar título */
-body[data-page="index"] .site-title {
-  display: none;
 }
 
 /* Pantallas muy estrechas: idiomas en 2×2 */
