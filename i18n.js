@@ -286,7 +286,12 @@
       nav.appendChild(btn);
     });
 
-    document.body.insertBefore(nav, document.body.firstChild);
+    var mount = document.getElementById("site-lang");
+    if (mount) {
+      mount.appendChild(nav);
+    } else {
+      document.body.insertBefore(nav, document.body.firstChild);
+    }
   }
 
   function loadSiteVersion() {

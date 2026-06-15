@@ -2,54 +2,61 @@
 <html lang="en">
 <head>
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
   <meta name="description" content="Angry Axies — strategy game in browser and Android. Build your fortress, tactical powers, PvP, and global leaderboard." />
   <title>Angry Axies — Browser &amp; Android Game</title>
   <link rel="stylesheet" href="./site.css" />
 </head>
 <body data-page="index">
-  <div class="wrap">
-    <h1 class="site-title">Angry Axies</h1>
-    <p class="lead" data-i18n="index.lead">
-      Forge your fortress, manage your resources with cunning, and unleash tactical powers to overcome your enemies. Victory awaits those who master the art of strategy.
-    </p>
+  <header class="site-header" id="site-lang"></header>
 
-    <div class="actions">
-      <a class="btn" href="http://angryaxies.servehttp.com/" rel="noopener noreferrer" data-i18n="index.btn.play">Play in browser</a>
-      <a class="btn secondary" href="./descarga-apk.html" data-i18n="index.btn.apk">Download APK (Android)</a>
-    </div>
+  <main class="site-main">
+    <div class="hero-banner" aria-hidden="true"></div>
 
-    <div class="card">
-      <h2 data-i18n="index.features.title">What's included</h2>
-      <ul>
-        <li data-i18n="index.features.1">Campaign and challenging levels</li>
-        <li data-i18n="index.features.2">Global leaderboard</li>
-        <li data-i18n="index.features.3">Online PvP against other players</li>
-        <li data-i18n="index.features.4">Attack and defense powers</li>
-        <li data-i18n="index.features.5">Unique building blocks in this game that take strategy to the next level</li>
-        <li data-i18n="index.features.6">Android app and browser to play wherever you want</li>
-        <li data-i18n="index.features.7">Variety of languages: English, Spanish, Filipino, and Chinese</li>
-      </ul>
-    </div>
-
-    <div class="card">
-      <h2 data-i18n="index.community.title">Community</h2>
-      <p style="margin:0">
-        <span data-i18n="index.community.text">Join us on Discord:</span>
-        <a href="https://discord.gg/xJV6UAV38c" rel="noopener noreferrer" style="color:var(--link)">discord.gg/xJV6UAV38c</a>
+    <div class="site-panel">
+      <h1 class="site-title">Angry Axies</h1>
+      <p class="lead" data-i18n="index.lead">
+        Forge your fortress, manage your resources with cunning, and unleash tactical powers to overcome your enemies. Victory awaits those who master the art of strategy.
       </p>
-    </div>
 
-    <footer>
-      <p>
-        <span data-i18n="index.footer.server">Game server:</span>
-        <a href="http://angryaxies.servehttp.com/" rel="noopener noreferrer">angryaxies.servehttp.com</a>
-      </p>
-      <p>
-        <a href="./descarga-apk.html" data-i18n="index.footer.install">Android installation instructions</a>
-      </p>
-    </footer>
-  </div>
+      <div class="actions">
+        <a class="btn" href="http://angryaxies.servehttp.com/" rel="noopener noreferrer" data-i18n="index.btn.play">Play in browser</a>
+        <a class="btn secondary" href="./descarga-apk.html" data-i18n="index.btn.apk">Download APK (Android)</a>
+      </div>
+
+      <div class="card">
+        <h2 data-i18n="index.features.title">What's included</h2>
+        <ul>
+          <li data-i18n="index.features.1">Campaign and challenging levels</li>
+          <li data-i18n="index.features.2">Global leaderboard</li>
+          <li data-i18n="index.features.3">Online PvP against other players</li>
+          <li data-i18n="index.features.4">Attack and defense powers</li>
+          <li data-i18n="index.features.5">Unique building blocks in this game that take strategy to the next level</li>
+          <li data-i18n="index.features.6">Android app and browser to play wherever you want</li>
+          <li data-i18n="index.features.7">Variety of languages: English, Spanish, Filipino, and Chinese</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h2 data-i18n="index.community.title">Community</h2>
+        <p>
+          <span data-i18n="index.community.text">Join us on Discord:</span>
+          <a href="https://discord.gg/xJV6UAV38c" rel="noopener noreferrer">discord.gg/xJV6UAV38c</a>
+        </p>
+      </div>
+
+      <footer>
+        <p>
+          <span data-i18n="index.footer.server">Game server:</span>
+          <a href="http://angryaxies.servehttp.com/" rel="noopener noreferrer">angryaxies.servehttp.com</a>
+        </p>
+        <p>
+          <a href="./descarga-apk.html" data-i18n="index.footer.install">Android installation instructions</a>
+        </p>
+      </footer>
+    </div>
+  </main>
+
   <aside class="version-plaque" aria-label="Game version">
     <span class="version-plaque__label" data-i18n="site.version.label">Version</span>
     <strong class="version-plaque__num" id="site-version">1.095</strong>
