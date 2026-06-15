@@ -11,10 +11,10 @@ $headers = @{
 }
 
 $releaseBody = @{
-  tag_name    = "1.008"
-  name        = "Angry Axies 1.008"
+  tag_name    = "1.090"
+  name        = "Angry Axies 1.090"
   body        = @"
-APK Android para Angry Axies v1.008.
+APK Android para Angry Axies v1.090.
 
 Instalacion: https://coriamaximiliano.github.io/Angry-Axies/descarga-apk.html
 Jugar en navegador: http://216.238.71.48/
@@ -31,13 +31,13 @@ $release = Invoke-RestMethod -Method Post `
 
 Write-Host "Release creada: $($release.html_url)"
 
-$apk = Join-Path $PSScriptRoot "release-assets\AngryAxies-1.008.apk"
+$apk = Join-Path $PSScriptRoot "release-assets\AngryAxies-1.090.apk"
 if (-not (Test-Path $apk)) {
   throw "No se encontro la APK en $apk"
 }
 
 $uploadBase = $release.upload_url -replace '\{.*$', ''
-$uploadUrl = "${uploadBase}?name=AngryAxies-1.008.apk"
+$uploadUrl = "${uploadBase}?name=AngryAxies-1.090.apk"
 
 $uploadHeaders = @{
   Authorization = "Bearer $token"

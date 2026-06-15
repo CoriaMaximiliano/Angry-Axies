@@ -17,7 +17,7 @@
         "Angry Axies — Angry Birds-style game in browser and Android. Campaign, leaderboard, and online PvP.",
       "meta.index.title": "Angry Axies — Browser & Android Game",
       "meta.download.title": "Angry Axies — Download APK (Android)",
-      "index.badge": "Version 1.008",
+      "index.badge": "Version 1.090",
       "index.lead":
         "Launch Axies with real physics, smash structures, and compete in leaderboards and PvP. Play in your browser or install the Android app.",
       "index.btn.play": "Play in browser",
@@ -26,7 +26,7 @@
       "index.features.1": "Campaign and levels with Matter.js physics",
       "index.features.2": "Global leaderboard and player name",
       "index.features.3": "Online PvP against other players",
-      "index.features.4": "Ronin wallet integration (optional)",
+      "index.features.4": "Android app for mobile play",
       "index.features.5": "Multiple languages: English, Spanish, Filipino, Chinese",
       "index.community.title": "Community",
       "index.community.text": "Join us on Discord:",
@@ -34,9 +34,9 @@
       "index.footer.install": "Android installation instructions",
       "download.title": "Angry Axies for Android (APK)",
       "download.intro":
-        "The official download for the current build is on GitHub, in release <strong>1.008</strong>. Open the release page and download the APK from Assets.",
-      "download.btn.release": "Open release 1.008 on GitHub",
-      "download.direct.label": "<strong>Direct download for this version (1.008):</strong>",
+        "The official download for the current build is on GitHub, in release <strong>1.090</strong>. Open the release page and download the APK from Assets.",
+      "download.btn.release": "Open release 1.090 on GitHub",
+      "download.direct.label": "<strong>Direct download for this version (1.090):</strong>",
       "download.latest":
         'You can also use the latest published release: <a href="https://github.com/CoriaMaximiliano/Angry-Axies/releases/latest" style="color:#7eb8ff;">releases/latest</a>',
       "download.req.title": "Requirements",
@@ -45,7 +45,7 @@
       "download.req.3": "Internet connection for leaderboard and PvP",
       "download.install.title": "Install on your phone",
       "download.install.1":
-        "Download <code>AngryAxies-1.008.apk</code> on your phone (Chrome, Drive, USB, etc.).",
+        "Download <code>AngryAxies-1.090.apk</code> on your phone (Chrome, Drive, USB, etc.).",
       "download.install.2":
         "Open the downloaded file. If Android asks for permission, enable “Install unknown apps” only for that browser or file manager.",
       "download.install.3":
@@ -69,7 +69,7 @@
         "Angry Axies — juego tipo Angry Birds en navegador y Android. Campaña, ranking y PvP en línea.",
       "meta.index.title": "Angry Axies — Juego en navegador y Android",
       "meta.download.title": "Angry Axies — Descargar APK (Android)",
-      "index.badge": "Versión 1.008",
+      "index.badge": "Versión 1.090",
       "index.lead":
         "Lanzá Axies con física real, destruí estructuras y competí en ranking y PvP. Jugá en el navegador o instalá la app Android.",
       "index.btn.play": "Jugar en el navegador",
@@ -78,7 +78,7 @@
       "index.features.1": "Campaña y niveles con física Matter.js",
       "index.features.2": "Ranking global y nombre de jugador",
       "index.features.3": "PvP en línea contra otros jugadores",
-      "index.features.4": "Integración con wallet Ronin (opcional)",
+      "index.features.4": "App Android para jugar en el móvil",
       "index.features.5": "Varios idiomas: inglés, español, filipino, chino",
       "index.community.title": "Comunidad",
       "index.community.text": "Unite al Discord:",
@@ -86,9 +86,9 @@
       "index.footer.install": "Instrucciones de instalación Android",
       "download.title": "Angry Axies para Android (APK)",
       "download.intro":
-        "La descarga oficial del build actual está en GitHub, en la release <strong>1.008</strong>. Abrí la página del release y descargá el APK desde «Assets».",
-      "download.btn.release": "Abrir release 1.008 en GitHub",
-      "download.direct.label": "<strong>Descarga directa de esta versión (1.008):</strong>",
+        "La descarga oficial del build actual está en GitHub, en la release <strong>1.090</strong>. Abrí la página del release y descargá el APK desde «Assets».",
+      "download.btn.release": "Abrir release 1.090 en GitHub",
+      "download.direct.label": "<strong>Descarga directa de esta versión (1.090):</strong>",
       "download.latest":
         'También podés usar la última release publicada: <a href="https://github.com/CoriaMaximiliano/Angry-Axies/releases/latest" style="color:#7eb8ff;">releases/latest</a>',
       "download.req.title": "Requisitos",
@@ -97,7 +97,7 @@
       "download.req.3": "Conexión a internet para ranking y PvP",
       "download.install.title": "Instalación en el celular",
       "download.install.1":
-        "Descargá <code>AngryAxies-1.008.apk</code> en el teléfono (Chrome, Drive, USB, etc.).",
+        "Descargá <code>AngryAxies-1.090.apk</code> en el teléfono (Chrome, Drive, USB, etc.).",
       "download.install.2":
         "Abrí el archivo descargado. Si Android pide permiso, activá «Instalar apps desconocidas» solo para ese navegador o gestor de archivos.",
       "download.install.3":
@@ -121,7 +121,7 @@
         "Angry Axies — larong parang Angry Birds sa browser at Android. Campaign, leaderboard, at online PvP.",
       "meta.index.title": "Angry Axies — Laro sa Browser at Android",
       "meta.download.title": "Angry Axies — I-download ang APK (Android)",
-      "index.badge": "Bersyon 1.008",
+      "index.badge": "Bersyon 1.090",
       "index.lead":
         "Ilunsad ang Axies na may tunay na physics, wasakin ang mga istruktura, at makipaglaban sa leaderboard at PvP. Maglaro sa browser o i-install ang Android app.",
       "index.btn.play": "Maglaro sa browser",
@@ -130,7 +130,7 @@
       "index.features.1": "Campaign at mga level na may Matter.js physics",
       "index.features.2": "Global leaderboard at pangalan ng manlalaro",
       "index.features.3": "Online PvP laban sa ibang manlalaro",
-      "index.features.4": "Ronin wallet integration (opsyonal)",
+      "index.features.4": "Android app para sa mobile",
       "index.features.5": "Maraming wika: Ingles, Espanyol, Filipino, Tsino",
       "index.community.title": "Komunidad",
       "index.community.text": "Sumali sa Discord:",
@@ -138,9 +138,9 @@
       "index.footer.install": "Mga tagubilin sa pag-install sa Android",
       "download.title": "Angry Axies para sa Android (APK)",
       "download.intro":
-        "Ang opisyal na download ng kasalukuyang build ay nasa GitHub, sa release na <strong>1.008</strong>. Buksan ang release page at i-download ang APK mula sa Assets.",
-      "download.btn.release": "Buksan ang release 1.008 sa GitHub",
-      "download.direct.label": "<strong>Direktang download para sa bersyong ito (1.008):</strong>",
+        "Ang opisyal na download ng kasalukuyang build ay nasa GitHub, sa release na <strong>1.090</strong>. Buksan ang release page at i-download ang APK mula sa Assets.",
+      "download.btn.release": "Buksan ang release 1.090 sa GitHub",
+      "download.direct.label": "<strong>Direktang download para sa bersyong ito (1.090):</strong>",
       "download.latest":
         'Maaari mo ring gamitin ang pinakabagong release: <a href="https://github.com/CoriaMaximiliano/Angry-Axies/releases/latest" style="color:#7eb8ff;">releases/latest</a>',
       "download.req.title": "Mga kinakailangan",
@@ -149,7 +149,7 @@
       "download.req.3": "Kailangan ng internet para sa leaderboard at PvP",
       "download.install.title": "Pag-install sa cellphone",
       "download.install.1":
-        "I-download ang <code>AngryAxies-1.008.apk</code> sa telepono (Chrome, Drive, USB, atbp.).",
+        "I-download ang <code>AngryAxies-1.090.apk</code> sa telepono (Chrome, Drive, USB, atbp.).",
       "download.install.2":
         "Buksan ang na-download na file. Kung humingi ng permiso ang Android, i-enable ang “Install unknown apps” para lang sa browser o file manager na iyon.",
       "download.install.3":
@@ -173,7 +173,7 @@
         "Angry Axies — 浏览器与 Android 上的 Angry Birds 风格游戏。战役、排行榜与在线 PvP。",
       "meta.index.title": "Angry Axies — 浏览器与 Android 游戏",
       "meta.download.title": "Angry Axies — 下载 APK（Android）",
-      "index.badge": "版本 1.008",
+      "index.badge": "版本 1.090",
       "index.lead":
         "用真实物理发射 Axies，摧毁建筑，在排行榜与 PvP 中竞技。可在浏览器游玩或安装 Android 应用。",
       "index.btn.play": "在浏览器中游玩",
@@ -182,7 +182,7 @@
       "index.features.1": "战役关卡，Matter.js 物理引擎",
       "index.features.2": "全球排行榜与玩家名称",
       "index.features.3": "在线 PvP 对战其他玩家",
-      "index.features.4": "Ronin 钱包集成（可选）",
+      "index.features.4": "Android 移动版应用",
       "index.features.5": "多语言：英语、西班牙语、菲律宾语、中文",
       "index.community.title": "社区",
       "index.community.text": "加入 Discord：",
@@ -190,9 +190,9 @@
       "index.footer.install": "Android 安装说明",
       "download.title": "Angry Axies Android 版（APK）",
       "download.intro":
-        "当前版本的官方下载在 GitHub 上，标签为 <strong>1.008</strong> 的 release。打开 release 页面，从 Assets 下载 APK。",
-      "download.btn.release": "在 GitHub 打开 1.008 release",
-      "download.direct.label": "<strong>此版本（1.008）直接下载：</strong>",
+        "当前版本的官方下载在 GitHub 上，标签为 <strong>1.090</strong> 的 release。打开 release 页面，从 Assets 下载 APK。",
+      "download.btn.release": "在 GitHub 打开 1.090 release",
+      "download.direct.label": "<strong>此版本（1.090）直接下载：</strong>",
       "download.latest":
         '也可使用最新发布的 release：<a href="https://github.com/CoriaMaximiliano/Angry-Axies/releases/latest" style="color:#7eb8ff;">releases/latest</a>',
       "download.req.title": "系统要求",
@@ -201,7 +201,7 @@
       "download.req.3": "排行榜与 PvP 需要网络连接",
       "download.install.title": "在手机上安装",
       "download.install.1":
-        "在手机上下载 <code>AngryAxies-1.008.apk</code>（Chrome、Drive、USB 等）。",
+        "在手机上下载 <code>AngryAxies-1.090.apk</code>（Chrome、Drive、USB 等）。",
       "download.install.2":
         "打开下载的文件。若 Android 请求权限，仅对该浏览器或文件管理器启用「安装未知应用」。",
       "download.install.3":

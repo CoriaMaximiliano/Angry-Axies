@@ -7,7 +7,7 @@ $Root = Split-Path -Parent $MyInvocation.MyCommand.Path
 Set-Location $Root
 
 $Repo = "CoriaMaximiliano/Angry-Axies"
-$Version = "1.008"
+$Version = "1.090"
 $ApkName = "AngryAxies-$Version.apk"
 $ApkPath = Join-Path $Root "release-assets\$ApkName"
 
