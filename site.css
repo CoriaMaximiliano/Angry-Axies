@@ -27,13 +27,13 @@ html {
 
 body {
   font-family: "Segoe UI", system-ui, sans-serif;
-  background-color: #6eb5e8;
+  background-color: #3d6b4a;
   background-image:
-    linear-gradient(rgba(8, 12, 20, 0.08), rgba(8, 12, 20, 0.28)),
+    linear-gradient(rgba(8, 12, 20, 0.06), rgba(8, 12, 20, 0.22)),
     url("./images/fondo-github.png");
-  background-size: cover;
+  background-size: 100% auto;
+  background-repeat: no-repeat, repeat-y;
   background-position: center top;
-  background-repeat: no-repeat;
   background-attachment: scroll;
   color: var(--text);
   margin: 0;
@@ -41,11 +41,6 @@ body {
   min-height: 100dvh;
   line-height: 1.6;
   overflow-x: hidden;
-}
-
-body[data-page="index"] {
-  background-size: 100% auto;
-  background-position: center top;
 }
 
 /* —— Barra de idiomas: siempre arriba, nunca encima del contenido —— */
