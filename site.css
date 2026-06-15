@@ -11,7 +11,14 @@
 
 body {
   font-family: "Segoe UI", system-ui, sans-serif;
-  background: var(--bg);
+  background-color: #6eb5e8;
+  background-image:
+    linear-gradient(rgba(8, 12, 20, 0.18), rgba(8, 12, 20, 0.42)),
+    url("./images/fondo-github.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   color: var(--text);
   margin: 0;
   min-height: 100vh;
@@ -30,8 +37,8 @@ body {
 }
 
 .lang-switch button {
-  border: 1px solid #2a3548;
-  background: #121824;
+  border: 1px solid rgba(42, 53, 72, 0.85);
+  background: rgba(18, 24, 36, 0.88);
   color: var(--muted);
   padding: 0.45rem 0.75rem;
   border-radius: 8px;
@@ -81,6 +88,7 @@ h1 {
   margin: 0 0 0.75rem;
   font-weight: 800;
   line-height: 1.2;
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.45);
 }
 
 h1.h1-sm {
@@ -124,8 +132,8 @@ a.btn.secondary {
 a.btn:hover { filter: brightness(1.08); }
 
 .card, .note {
-  background: #121824;
-  border: 1px solid #1e2838;
+  background: rgba(18, 24, 36, 0.9);
+  border: 1px solid rgba(30, 40, 56, 0.95);
   border-radius: 12px;
   padding: 1.1rem 1.15rem;
   margin-bottom: 1rem;
@@ -146,6 +154,10 @@ footer, .back { margin-top: 2rem; font-size: 0.9rem; }
 footer a, .back a { color: var(--link); }
 
 @media (max-width: 640px) {
+  body {
+    background-attachment: scroll;
+  }
+
   .lang-switch {
     top: auto;
     bottom: 1rem;
