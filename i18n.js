@@ -17,7 +17,7 @@
         "Angry Axies — Angry Birds-style game in browser and Android. Campaign, leaderboard, and online PvP.",
       "meta.index.title": "Angry Axies — Browser & Android Game",
       "meta.download.title": "Angry Axies — Download APK (Android)",
-      "index.badge": "Version 1.090",
+      "site.version.label": "Version",
       "index.lead":
         "Launch Axies with real physics, smash structures, and compete in leaderboards and PvP. Play in your browser or install the Android app.",
       "index.btn.play": "Play in browser",
@@ -69,7 +69,7 @@
         "Angry Axies — juego tipo Angry Birds en navegador y Android. Campaña, ranking y PvP en línea.",
       "meta.index.title": "Angry Axies — Juego en navegador y Android",
       "meta.download.title": "Angry Axies — Descargar APK (Android)",
-      "index.badge": "Versión 1.090",
+      "site.version.label": "Versión",
       "index.lead":
         "Lanzá Axies con física real, destruí estructuras y competí en ranking y PvP. Jugá en el navegador o instalá la app Android.",
       "index.btn.play": "Jugar en el navegador",
@@ -121,7 +121,7 @@
         "Angry Axies — larong parang Angry Birds sa browser at Android. Campaign, leaderboard, at online PvP.",
       "meta.index.title": "Angry Axies — Laro sa Browser at Android",
       "meta.download.title": "Angry Axies — I-download ang APK (Android)",
-      "index.badge": "Bersyon 1.090",
+      "site.version.label": "Bersyon",
       "index.lead":
         "Ilunsad ang Axies na may tunay na physics, wasakin ang mga istruktura, at makipaglaban sa leaderboard at PvP. Maglaro sa browser o i-install ang Android app.",
       "index.btn.play": "Maglaro sa browser",
@@ -173,7 +173,7 @@
         "Angry Axies — 浏览器与 Android 上的 Angry Birds 风格游戏。战役、排行榜与在线 PvP。",
       "meta.index.title": "Angry Axies — 浏览器与 Android 游戏",
       "meta.download.title": "Angry Axies — 下载 APK（Android）",
-      "index.badge": "版本 1.090",
+      "site.version.label": "版本",
       "index.lead":
         "用真实物理发射 Axies，摧毁建筑，在排行榜与 PvP 中竞技。可在浏览器游玩或安装 Android 应用。",
       "index.btn.play": "在浏览器中游玩",
@@ -281,8 +281,22 @@
     document.body.insertBefore(nav, document.body.firstChild);
   }
 
+  function loadSiteVersion() {
+    var el = document.getElementById("site-version");
+    if (!el) return;
+    fetch("./site-meta.json")
+      .then(function (res) {
+        return res.ok ? res.json() : null;
+      })
+      .then(function (meta) {
+        if (meta && meta.version) el.textContent = meta.version;
+      })
+      .catch(function () {});
+  }
+
   document.addEventListener("DOMContentLoaded", function () {
     buildLangSwitch();
+    loadSiteVersion();
     applyLang(detectLang());
   });
 
