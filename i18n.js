@@ -19,7 +19,7 @@
       "meta.download.title": "Angry Axies — Download APK (Android)",
       "site.version.label": "Version",
       "index.lead":
-        "Forge your fortress, manage your resources with cunning, and unleash tactical powers to overcome your enemies. Victory awaits those who master the art of strategy.",
+        "Design your fortress, optimize your energy, and unleash chaos on your rival. Are you ready for the challenge?",
       "index.btn.play": "Play in browser",
       "index.btn.iphone": "iPhone",
       "index.btn.apk": "Download APK (Android)",
@@ -74,7 +74,7 @@
       "meta.download.title": "Angry Axies — Descargar APK (Android)",
       "site.version.label": "Versión",
       "index.lead":
-        "Forjá tu fortaleza, gestioná tus recursos con astucia y desatá poderes tácticos para doblegar a tus enemigos. La victoria aguarda a quien domine el arte de la estrategia.",
+        "Diseña tu fortaleza, optimiza tu energía y desata el caos sobre tu rival. ¿Estás listo para el desafío?",
       "index.btn.play": "Jugar en el navegador",
       "index.btn.iphone": "iPhone",
       "index.btn.apk": "Descargar APK (Android)",
@@ -129,7 +129,7 @@
       "meta.download.title": "Angry Axies — I-download ang APK (Android)",
       "site.version.label": "Bersyon",
       "index.lead":
-        "Itayo ang iyong kuta, pamahalaan ang mga resources nang matalino, at ilabas ang mga tactical power para talunin ang mga kalaban. Ang tagumpay ay para sa mga master ng sining ng estratehiya.",
+        "Idisenyo ang iyong kuta, i-optimize ang enerhiya mo, at ilabas ang kaguluhan sa kalaban. Handa ka na ba sa hamon?",
       "index.btn.play": "Maglaro sa browser",
       "index.btn.iphone": "iPhone",
       "index.btn.apk": "I-download ang APK (Android)",
@@ -184,7 +184,7 @@
       "meta.download.title": "Angry Axies — 下载 APK（Android）",
       "site.version.label": "版本",
       "index.lead":
-        "锻造你的要塞，精明管理资源，释放战术技能击败敌人。胜利属于掌握策略艺术的人。",
+        "设计你的要塞，优化能量，向对手释放混乱。你准备好接受挑战了吗？",
       "index.btn.play": "在浏览器中游玩",
       "index.btn.iphone": "iPhone",
       "index.btn.apk": "下载 APK（Android）",

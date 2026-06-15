@@ -133,13 +133,19 @@ body[data-page="index"] .site-main {
 }
 
 .site-title {
-  font-size: clamp(1.75rem, 5vw, 2.25rem);
-  margin: 0 0 0.75rem;
+  font-size: clamp(1.85rem, 5vw, 2.35rem);
+  margin: 0 0 0.85rem;
   font-weight: 900;
-  line-height: 1.15;
+  line-height: 1.1;
   letter-spacing: 0.02em;
-  color: #fff8ec;
-  text-shadow: var(--text-stroke);
+  color: #ffffff;
+  text-shadow:
+    -2px -2px 0 #3d2817,
+    2px -2px 0 #3d2817,
+    -2px 2px 0 #3d2817,
+    2px 2px 0 #3d2817,
+    0 4px 0 rgba(45, 30, 12, 0.85),
+    0 8px 22px rgba(0, 0, 0, 0.45);
 }
 
 h1 {
@@ -312,11 +318,6 @@ footer p:last-child,
     -1px 1px 0 #4a4034,
     1px 1px 0 #4a4034,
     0 2px 0 #2f2922;
-}
-
-/* Inicio: el fondo ya muestra el logo, no duplicar título */
-body[data-page="index"] .site-title {
-  display: none;
 }
 
 /* Pantallas muy estrechas: idiomas en 2×2 */
