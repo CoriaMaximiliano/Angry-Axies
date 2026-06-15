@@ -13,10 +13,10 @@ body {
   font-family: "Segoe UI", system-ui, sans-serif;
   background-color: #6eb5e8;
   background-image:
-    linear-gradient(rgba(8, 12, 20, 0.18), rgba(8, 12, 20, 0.42)),
+    linear-gradient(rgba(8, 12, 20, 0.12), rgba(8, 12, 20, 0.32)),
     url("./images/fondo-github.png");
   background-size: cover;
-  background-position: center top;
+  background-position: center center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   color: var(--text);
