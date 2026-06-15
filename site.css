@@ -43,6 +43,11 @@ body {
   overflow-x: hidden;
 }
 
+body[data-page="index"] {
+  background-size: 100% auto;
+  background-position: center top;
+}
+
 /* —— Barra de idiomas: siempre arriba, nunca encima del contenido —— */
 .site-header {
   position: sticky;
@@ -99,13 +104,18 @@ body {
   padding-bottom: calc(4.75rem + var(--safe-bottom));
 }
 
-/* En inicio: espacio para el logo del fondo en móvil */
-@media (max-width: 640px) {
-  body[data-page="index"] .site-main {
-    padding-top: clamp(7rem, 32vw, 11rem);
-  }
+/* En inicio: espacio para el logo ANGRY AXIES del fondo */
+.hero-banner {
+  min-height: clamp(14rem, 48vh, 22rem);
+  margin-bottom: clamp(0.75rem, 2.5vw, 1.25rem);
+  pointer-events: none;
 }
 
+body[data-page="index"] .site-main {
+  padding-top: clamp(0.25rem, 1.5vw, 0.75rem);
+}
+
+/* Panel único: todo el texto legible sobre cualquier fondo */
 .site-panel {
   width: 100%;
   padding: clamp(1rem, 3.5vw, 1.75rem);
@@ -170,6 +180,11 @@ code {
   flex-wrap: wrap;
   gap: 0.65rem;
   margin: 0 0 1.5rem;
+}
+
+.actions .btn {
+  flex: 1 1 calc(50% - 0.35rem);
+  min-width: 9rem;
 }
 
 a.btn {
@@ -297,6 +312,11 @@ footer p:last-child,
     0 2px 0 #2f2922;
 }
 
+/* Inicio: el fondo ya muestra el logo, no duplicar título */
+body[data-page="index"] .site-title {
+  display: none;
+}
+
 /* Pantallas muy estrechas: idiomas en 2×2 */
 @media (max-width: 380px) {
   .lang-switch {
@@ -306,8 +326,8 @@ footer p:last-child,
 
 /* Pantallas anchas: botones de acción en fila */
 @media (min-width: 520px) {
-  a.btn {
-    flex: 0 1 auto;
-    min-width: 10rem;
+  .actions .btn {
+    flex: 1 1 auto;
+    min-width: 9.5rem;
   }
 }
