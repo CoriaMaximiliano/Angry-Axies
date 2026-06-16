@@ -37,9 +37,9 @@
       "index.footer.install": "Android installation instructions",
       "download.title": "Angry Axies for Android (APK)",
       "download.intro":
-        "The official download for the current build is on GitHub, in release <strong>1.102</strong>. Open the release page and download the APK from Assets.",
-      "download.btn.release": "Open release 1.102 on GitHub",
-      "download.direct.label": "<strong>Direct download for this version (1.102):</strong>",
+        "The official download for the current build is on GitHub, in release <strong>1.103</strong>. Open the release page and download the APK from Assets.",
+      "download.btn.release": "Open release 1.103 on GitHub",
+      "download.direct.label": "<strong>Direct download for this version (1.103):</strong>",
       "download.latest":
         'You can also use the latest published release: <a href="https://github.com/CoriaMaximiliano/Angry-Axies/releases/latest" style="color:#7eb8ff;">releases/latest</a>',
       "download.req.title": "Requirements",
@@ -48,7 +48,7 @@
       "download.req.3": "Internet connection for leaderboard and PvP",
       "download.install.title": "Install on your phone",
       "download.install.1":
-        "Download <code>AngryAxies-1.102.apk</code> on your phone (Chrome, Drive, USB, etc.).",
+        "Download <code>AngryAxies-1.103.apk</code> on your phone (Chrome, Drive, USB, etc.).",
       "download.install.2":
         "Open the downloaded file. If Android asks for permission, enable “Install unknown apps” only for that browser or file manager.",
       "download.install.3":
@@ -92,9 +92,9 @@
       "index.footer.install": "Instrucciones de instalación Android",
       "download.title": "Angry Axies para Android (APK)",
       "download.intro":
-        "La descarga oficial del build actual está en GitHub, en la release <strong>1.102</strong>. Abrí la página del release y descargá el APK desde «Assets».",
-      "download.btn.release": "Abrir release 1.102 en GitHub",
-      "download.direct.label": "<strong>Descarga directa de esta versión (1.102):</strong>",
+        "La descarga oficial del build actual está en GitHub, en la release <strong>1.103</strong>. Abrí la página del release y descargá el APK desde «Assets».",
+      "download.btn.release": "Abrir release 1.103 en GitHub",
+      "download.direct.label": "<strong>Descarga directa de esta versión (1.103):</strong>",
       "download.latest":
         'También podés usar la última release publicada: <a href="https://github.com/CoriaMaximiliano/Angry-Axies/releases/latest" style="color:#7eb8ff;">releases/latest</a>',
       "download.req.title": "Requisitos",
@@ -103,7 +103,7 @@
       "download.req.3": "Conexión a internet para ranking y PvP",
       "download.install.title": "Instalación en el celular",
       "download.install.1":
-        "Descargá <code>AngryAxies-1.102.apk</code> en el teléfono (Chrome, Drive, USB, etc.).",
+        "Descargá <code>AngryAxies-1.103.apk</code> en el teléfono (Chrome, Drive, USB, etc.).",
       "download.install.2":
         "Abrí el archivo descargado. Si Android pide permiso, activá «Instalar apps desconocidas» solo para ese navegador o gestor de archivos.",
       "download.install.3":
@@ -147,9 +147,9 @@
       "index.footer.install": "Mga tagubilin sa pag-install sa Android",
       "download.title": "Angry Axies para sa Android (APK)",
       "download.intro":
-        "Ang opisyal na download ng kasalukuyang build ay nasa GitHub, sa release na <strong>1.102</strong>. Buksan ang release page at i-download ang APK mula sa Assets.",
-      "download.btn.release": "Buksan ang release 1.102 sa GitHub",
-      "download.direct.label": "<strong>Direktang download para sa bersyong ito (1.102):</strong>",
+        "Ang opisyal na download ng kasalukuyang build ay nasa GitHub, sa release na <strong>1.103</strong>. Buksan ang release page at i-download ang APK mula sa Assets.",
+      "download.btn.release": "Buksan ang release 1.103 sa GitHub",
+      "download.direct.label": "<strong>Direktang download para sa bersyong ito (1.103):</strong>",
       "download.latest":
         'Maaari mo ring gamitin ang pinakabagong release: <a href="https://github.com/CoriaMaximiliano/Angry-Axies/releases/latest" style="color:#7eb8ff;">releases/latest</a>',
       "download.req.title": "Mga kinakailangan",
@@ -158,7 +158,7 @@
       "download.req.3": "Kailangan ng internet para sa leaderboard at PvP",
       "download.install.title": "Pag-install sa cellphone",
       "download.install.1":
-        "I-download ang <code>AngryAxies-1.102.apk</code> sa telepono (Chrome, Drive, USB, atbp.).",
+        "I-download ang <code>AngryAxies-1.103.apk</code> sa telepono (Chrome, Drive, USB, atbp.).",
       "download.install.2":
         "Buksan ang na-download na file. Kung humingi ng permiso ang Android, i-enable ang “Install unknown apps” para lang sa browser o file manager na iyon.",
       "download.install.3":
@@ -202,9 +202,9 @@
       "index.footer.install": "Android 安装说明",
       "download.title": "Angry Axies Android 版（APK）",
       "download.intro":
-        "当前版本的官方下载在 GitHub 上，标签为 <strong>1.102</strong> 的 release。打开 release 页面，从 Assets 下载 APK。",
-      "download.btn.release": "在 GitHub 打开 1.102 release",
-      "download.direct.label": "<strong>此版本（1.102）直接下载：</strong>",
+        "当前版本的官方下载在 GitHub 上，标签为 <strong>1.103</strong> 的 release。打开 release 页面，从 Assets 下载 APK。",
+      "download.btn.release": "在 GitHub 打开 1.103 release",
+      "download.direct.label": "<strong>此版本（1.103）直接下载：</strong>",
       "download.latest":
         '也可使用最新发布的 release：<a href="https://github.com/CoriaMaximiliano/Angry-Axies/releases/latest" style="color:#7eb8ff;">releases/latest</a>',
       "download.req.title": "系统要求",
@@ -213,7 +213,7 @@
       "download.req.3": "排行榜与 PvP 需要网络连接",
       "download.install.title": "在手机上安装",
       "download.install.1":
-        "在手机上下载 <code>AngryAxies-1.102.apk</code>（Chrome、Drive、USB 等）。",
+        "在手机上下载 <code>AngryAxies-1.103.apk</code>（Chrome、Drive、USB 等）。",
       "download.install.2":
         "打开下载的文件。若 Android 请求权限，仅对该浏览器或文件管理器启用「安装未知应用」。",
       "download.install.3":
