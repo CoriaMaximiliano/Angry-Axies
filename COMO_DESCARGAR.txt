@@ -10,7 +10,7 @@ Opción A — Desde la web
 
 Opción B — Manual en GitHub
 1) Abrí la última release: https://github.com/CoriaMaximiliano/Angry-Axies/releases/latest
-2) Bajá AngryAxies-1.119.apk (o la versión que figure en Assets).
+2) Bajá AngryAxies-1.120.apk (o la versión que figure en Assets).
 3) Instalá y abrí «Angry Axies».
 
 Jugar en PC o navegador del celular (sin APK):
