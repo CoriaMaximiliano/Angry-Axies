@@ -5,7 +5,7 @@ Página de descarga: https://coriamaximiliano.github.io/Angry-Axies/descarga-apk
 Repo: https://github.com/CoriaMaximiliano/Angry-Axies
 
 En cada release en GitHub subí SOLO la APK con nombre fijo:
-  AngryAxies-1.129.apk   (cambiá el número según public/game-version.json)
+  AngryAxies-1.130.apk   (cambiá el número según public/game-version.json)
 
 NO subas la APK al repo en la rama main (pesa ~47 MB). Usá Releases.
 
@@ -20,9 +20,9 @@ Flujo manual:
      (o app-debug.apk según el build)
   3) Copiala y renombrala a AngryAxies-X.XXX.apk (sin espacios).
   4) En GitHub → repo Angry-Axies → Releases → Draft a new release
-     - Tag: mismo número de versión (ej. 1.129)
-     - Title: Angry Axies 1.129
-     - Adjuntá AngryAxies-1.129.apk en Assets
+     - Tag: mismo número de versión (ej. 1.130)
+     - Title: Angry Axies 1.130
+     - Adjuntá AngryAxies-1.130.apk en Assets
   5) Actualizá descarga-apk.html e index.html si cambió el número de versión.
   6) git commit + push a main → GitHub Actions publica la web.
 
