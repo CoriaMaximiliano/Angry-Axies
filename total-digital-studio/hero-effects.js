@@ -68,7 +68,7 @@
 
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-      ctx.fillStyle = "rgba(96, 165, 250, 0.55)";
+      ctx.fillStyle = "rgba(192, 132, 252, 0.55)";
       ctx.fill();
 
       for (var j = i + 1; j < particles.length; j++) {
@@ -77,7 +77,7 @@
         var ddy = p.y - q.y;
         var d = Math.sqrt(ddx * ddx + ddy * ddy);
         if (d < linkDist) {
-          ctx.strokeStyle = "rgba(59, 130, 246, " + (1 - d / linkDist) * 0.22 + ")";
+          ctx.strokeStyle = "rgba(104, 33, 122, " + (1 - d / linkDist) * 0.2 + ")";
           ctx.lineWidth = 1;
           ctx.beginPath();
           ctx.moveTo(p.x, p.y);
