@@ -5,7 +5,7 @@
   if (!form) return;
 
   var phone = "5492643227101";
-  var email = "totaldigitalstudio@gmail.com";
+  var notifyEmail = "maxicoria2013@gmail.com";
 
   form.addEventListener("submit", function (e) {
     e.preventDefault();
@@ -37,12 +37,23 @@
     var waUrl = "https://wa.me/" + phone + "?text=" + encodeURIComponent(body);
     window.open(waUrl, "_blank", "noopener,noreferrer");
 
-    var mailSubject = encodeURIComponent("Consulta - Total Digital Studio - " + name);
-    var mailBody = encodeURIComponent(body);
-    var mailUrl = "mailto:" + email + "?subject=" + mailSubject + "&body=" + mailBody;
-
-    setTimeout(function () {
-      window.location.href = mailUrl;
-    }, 400);
+    fetch("https://formsubmit.co/ajax/" + encodeURIComponent(notifyEmail), {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        _subject: "Consulta Total Digital Studio - " + name,
+        _captcha: "false",
+        _template: "table",
+        nombre: name,
+        whatsapp: whatsapp,
+        mensaje: need,
+        texto_completo: body,
+      }),
+    }).catch(function () {
+      /* WhatsApp ya se abrió; si falla el mail, no bloqueamos al usuario */
+    });
   });
 })();

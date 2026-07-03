@@ -110,7 +110,8 @@ C# y OpenAI usan SVG locales en `icons/` porque el CDN externo fallaba. El resto
 | Colores, espaciado, responsive | `site.css` |
 | Números de stats (50+, 13+, 24h) | `index.html` → `data-count` y `data-i18n` en `#por-que` |
 | Lista de tecnologías | `index.html` → sección `#tecnologia` |
-| WhatsApp / email | `index.html` (contacto) y `contact-form.js` (número WA) |
+| WhatsApp / email del formulario | `index.html` (contacto) y `contact-form.js` |
+| Email al enviar formulario | `maxicoria2013@gmail.com` (vía [FormSubmit](https://formsubmit.co)) |
 | Logo web | Reemplazar en `assets/` o regenerar con `scripts/procesar-logo.py` |
 
 ---
@@ -200,7 +201,11 @@ GitHub Pages en el repo: **Settings → Pages → Branch `main` → /(root)**.
 ## Contacto en el sitio
 
 - Email: `totaldigitalstudio@gmail.com`  
+- Email público: `totaldigitalstudio@gmail.com`
+- Email al recibir consultas del formulario: `maxicoria2013@gmail.com`
 - WhatsApp: `+5492643227101` (enlace `wa.me/5492643227101`, sin el `+`)
+
+> **Primera vez con FormSubmit:** al primer envío del formulario, FormSubmit manda un mail de verificación a `maxicoria2013@gmail.com`. Hay que hacer clic en el enlace para activar los avisos automáticos.
 
 ---
 
