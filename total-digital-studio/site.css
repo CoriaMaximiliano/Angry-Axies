@@ -1256,7 +1256,8 @@ a:hover {
   }
 
   .brand__text small {
-    display: none;
+    font-size: 0.68rem;
+    letter-spacing: 0.02em;
   }
 
   .brand__text strong {
