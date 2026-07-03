@@ -175,9 +175,11 @@ a:hover {
 }
 
 .brand__text small {
-  font-size: 0.72rem;
-  color: var(--text-soft);
-  font-weight: 500;
+  font-size: 0.76rem;
+  color: var(--brand-violet);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  line-height: 1.25;
 }
 
 .site-nav {
