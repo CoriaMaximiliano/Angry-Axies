@@ -146,11 +146,11 @@ a:hover {
 
 .brand__logo {
   display: block;
-  width: 2.85rem;
-  height: 2.85rem;
+  width: 3.55rem;
+  height: 3.55rem;
   object-fit: contain;
   flex-shrink: 0;
-  filter: drop-shadow(0 2px 6px rgba(104, 33, 122, 0.3));
+  filter: drop-shadow(0 2px 8px rgba(104, 33, 122, 0.32));
   transition: filter 0.25s, transform 0.25s;
 }
 
