@@ -3,9 +3,9 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
-  <meta name="description" content="Total Digital Studio — Desarrollo de software a medida: aplicaciones, sitios web, sistemas, ecosistemas digitales y videojuegos." />
-  <meta name="theme-color" content="#0f172a" />
-  <title>Total Digital Studio — Desarrollo de Software</title>
+  <meta name="description" content="Total Digital Studio — Convertimos ideas en productos digitales: juegos, apps, SaaS, IA y sistemas que generan resultados." />
+  <meta name="theme-color" content="#020617" />
+  <title>Total Digital Studio — Productos digitales que generan resultados</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet" />
@@ -21,14 +21,13 @@
         <span class="brand__mark" aria-hidden="true">TDS</span>
         <span class="brand__text">
           <strong>Total Digital Studio</strong>
-          <small data-i18n="brand.tagline">Desarrollo de software</small>
+          <small data-i18n="brand.tagline">Productos digitales completos</small>
         </span>
       </a>
       <nav class="site-nav" aria-label="Principal">
         <a href="#servicios" data-i18n="nav.services">Servicios</a>
-        <a href="#proceso" data-i18n="nav.process">Proceso</a>
         <a href="#portafolio" data-i18n="nav.portfolio">Portafolio</a>
-        <a href="#contacto" class="site-nav__cta" data-i18n="nav.contact">Contacto</a>
+        <a href="#contacto" class="site-nav__cta" data-i18n="nav.contact">Pedí presupuesto</a>
       </nav>
       <div class="lang-switch" id="site-lang" role="group" aria-label="Idioma"></div>
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" data-i18n-aria="a11y.menu">
@@ -37,266 +36,222 @@
     </div>
     <nav class="mobile-nav" id="mobile-nav" hidden>
       <a href="#servicios" data-i18n="nav.services">Servicios</a>
-      <a href="#proceso" data-i18n="nav.process">Proceso</a>
       <a href="#portafolio" data-i18n="nav.portfolio">Portafolio</a>
-      <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      <a href="#contacto" data-i18n="nav.contact">Pedí presupuesto</a>
     </nav>
   </header>
 
   <main id="contenido">
-    <section class="hero">
-      <div class="hero__inner">
-        <p class="hero__eyebrow" data-i18n="hero.eyebrow">Estudio de desarrollo · San Juan, Argentina</p>
-        <h1 class="hero__title" data-i18n="hero.title">Software confiable, diseñado para crecer con su negocio</h1>
-        <p class="hero__lead" data-i18n="hero.lead">
-          En Total Digital Studio transformamos ideas en productos digitales sólidos: aplicaciones móviles,
-          sitios web, programas, sistemas a medida, ecosistemas integrados y videojuegos listos para producción.
-        </p>
+    <section class="hero hero--wow">
+      <canvas id="hero-canvas" class="hero__canvas" aria-hidden="true"></canvas>
+      <div class="hero__glow hero__glow--1" aria-hidden="true"></div>
+      <div class="hero__glow hero__glow--2" aria-hidden="true"></div>
+      <div class="hero__inner" data-tilt>
+        <p class="hero__eyebrow" data-i18n="hero.eyebrow">Total Digital Studio · San Juan, Argentina</p>
+        <h1 class="hero__title" data-i18n="hero.title">Convertimos ideas en productos digitales que generan resultados</h1>
+        <p class="hero__lead" data-i18n="hero.lead">Juegos, apps, SaaS e IA — de la idea al lanzamiento en producción.</p>
         <div class="hero__actions">
-          <a class="btn btn--primary" href="#contacto" data-i18n="hero.cta.primary">Solicitar consulta</a>
-          <a class="btn btn--ghost" href="#portafolio" data-i18n="hero.cta.secondary">Ver trabajos realizados</a>
+          <a class="btn btn--glow" href="#contacto" data-i18n="hero.cta.primary">Empecemos tu proyecto</a>
+          <a class="btn btn--ghost-light" href="#portafolio" data-i18n="hero.cta.secondary">Ver productos reales</a>
         </div>
-        <ul class="hero__trust" aria-label="Puntos de confianza">
-          <li data-i18n="hero.trust.1">Arquitectura limpia y mantenible</li>
-          <li data-i18n="hero.trust.2">Experiencia en productos publicados</li>
-          <li data-i18n="hero.trust.3">Comunicación clara en cada etapa</li>
+        <ul class="hero__trust" aria-label="Diferenciadores">
+          <li data-i18n="hero.trust.1">Apps publicadas en tiendas</li>
+          <li data-i18n="hero.trust.2">Juegos multijugador en vivo</li>
+          <li data-i18n="hero.trust.3">Sistemas complejos, no solo webs</li>
         </ul>
       </div>
     </section>
 
-    <section class="section" id="nosotros">
-      <div class="section__inner section__inner--split">
-        <div>
-          <h2 class="section__title" data-i18n="about.title">Quiénes somos</h2>
-          <p class="section__lead" data-i18n="about.lead">
-            Somos un estudio especializado en el ciclo completo del desarrollo de software: análisis,
-            diseño de sistemas, implementación, pruebas y despliegue.
-          </p>
-        </div>
-        <div class="prose">
-          <p data-i18n="about.p1">
-            Priorizamos código mantenible, separación de responsabilidades y decisiones técnicas que
-            reduzcan la deuda a largo plazo. Nuestro enfoque combina lógica de negocio compleja,
-            rendimiento optimizado y experiencia de usuario cuidada.
-          </p>
-          <p data-i18n="about.p2">
-            Hemos llevado aplicaciones a tiendas oficiales, juegos multijugador a producción y
-            plataformas web con integraciones avanzadas. Cada proyecto se aborda con el mismo criterio:
-            entregar un producto estable, escalable y alineado con los objetivos del cliente.
-          </p>
-        </div>
+    <section class="section section--compact" id="nosotros">
+      <div class="section__inner section__inner--narrow">
+        <p class="differentiator" data-i18n="about.lead">
+          No somos una agencia más. Somos un estudio que lleva juegos, fintech y plataformas complejas a producción real.
+        </p>
+      </div>
+      <div class="section-cta">
+        <a class="btn btn--primary" href="#contacto" data-i18n="cta.quote">Pedí un presupuesto</a>
       </div>
     </section>
 
     <section class="section section--muted" id="servicios">
       <div class="section__inner">
-        <header class="section__header">
-          <h2 class="section__title" data-i18n="services.title">Servicios</h2>
-          <p class="section__lead" data-i18n="services.lead">
-            Soluciones digitales integrales para empresas, emprendedores y equipos que necesitan
-            resultados concretos, no solo código.
-          </p>
+        <header class="section__header section__header--center">
+          <h2 class="section__title" data-i18n="services.title">Qué construimos</h2>
+          <p class="section__lead" data-i18n="services.lead">Productos digitales completos. No solo páginas.</p>
         </header>
         <div class="grid grid--3">
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">📱</div>
-            <h3 data-i18n="services.mobile.title">Aplicaciones móviles</h3>
-            <p data-i18n="services.mobile.desc">Apps nativas e híbridas para Android e iOS, publicadas en tiendas y optimizadas para uso diario.</p>
-          </article>
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">🌐</div>
-            <h3 data-i18n="services.web.title">Páginas y sitios web</h3>
-            <p data-i18n="services.web.desc">Sitios corporativos, landings y aplicaciones web responsivas con despliegue profesional.</p>
-          </article>
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">💻</div>
-            <h3 data-i18n="services.desktop.title">Programas y sistemas</h3>
-            <p data-i18n="services.desktop.desc">Software de escritorio y sistemas a medida con lógica de negocio robusta y flujos eficientes.</p>
-          </article>
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">🔗</div>
-            <h3 data-i18n="services.ecosystem.title">Ecosistemas digitales</h3>
-            <p data-i18n="services.ecosystem.desc">Integración de APIs, backends, sincronización en la nube y arquitecturas conectadas de extremo a extremo.</p>
-          </article>
-          <article class="card">
+          <article class="card card--wow" data-tilt>
             <div class="card__icon" aria-hidden="true">🎮</div>
             <h3 data-i18n="services.games.title">Videojuegos</h3>
-            <p data-i18n="services.games.desc">Juegos 2D y 3D, multijugador, física avanzada y distribución en navegador, PC, Android e iOS.</p>
+            <p data-i18n="services.games.desc">2D/3D, multijugador y física avanzada. Web, PC, Android e iOS.</p>
           </article>
-          <article class="card">
-            <div class="card__icon" aria-hidden="true">⚙️</div>
-            <h3 data-i18n="services.consulting.title">Consultoría técnica</h3>
-            <p data-i18n="services.consulting.desc">Auditoría de código, refactorización, optimización de rendimiento y acompañamiento en decisiones clave.</p>
+          <article class="card card--wow" data-tilt>
+            <div class="card__icon" aria-hidden="true">📱</div>
+            <h3 data-i18n="services.mobile.title">Apps móviles</h3>
+            <p data-i18n="services.mobile.desc">Android e iOS publicadas en tiendas, listas para escalar.</p>
+          </article>
+          <article class="card card--wow" data-tilt>
+            <div class="card__icon" aria-hidden="true">☁️</div>
+            <h3 data-i18n="services.saas.title">Plataformas SaaS</h3>
+            <p data-i18n="services.saas.desc">Suscripciones, paneles de usuario y backends escalables.</p>
+          </article>
+          <article class="card card--wow" data-tilt>
+            <div class="card__icon" aria-hidden="true">🤖</div>
+            <h3 data-i18n="services.ai.title">Automatización con IA</h3>
+            <p data-i18n="services.ai.desc">Asistentes, flujos inteligentes y features con IA integrada.</p>
+          </article>
+          <article class="card card--wow" data-tilt>
+            <div class="card__icon" aria-hidden="true">🏢</div>
+            <h3 data-i18n="services.enterprise.title">Sistemas empresariales</h3>
+            <p data-i18n="services.enterprise.desc">ERP, inventarios, operaciones y lógica de negocio robusta.</p>
+          </article>
+          <article class="card card--wow" data-tilt>
+            <div class="card__icon" aria-hidden="true">🚀</div>
+            <h3 data-i18n="services.landing.title">Landings de conversión</h3>
+            <p data-i18n="services.landing.desc">Páginas rápidas, claras y diseñadas para vender.</p>
+          </article>
+          <article class="card card--wow" data-tilt>
+            <div class="card__icon" aria-hidden="true">📊</div>
+            <h3 data-i18n="services.dashboard.title">Dashboards financieros</h3>
+            <p data-i18n="services.dashboard.desc">Métricas, reportes y visualización de datos en tiempo real.</p>
+          </article>
+          <article class="card card--wow" data-tilt>
+            <div class="card__icon" aria-hidden="true">🔗</div>
+            <h3 data-i18n="services.api.title">Integraciones API</h3>
+            <p data-i18n="services.api.desc">Pagos, terceros, sincronización y ecosistemas conectados.</p>
+          </article>
+          <article class="card card--wow" data-tilt>
+            <div class="card__icon" aria-hidden="true">⚡</div>
+            <h3 data-i18n="services.custom.title">Soluciones a medida</h3>
+            <p data-i18n="services.custom.desc">Si es digital y complejo, lo diseñamos y lo lanzamos.</p>
           </article>
         </div>
+      </div>
+      <div class="section-cta">
+        <a class="btn btn--primary" href="#contacto" data-i18n="cta.start">Empecemos tu proyecto</a>
       </div>
     </section>
 
     <section class="section" id="proceso">
       <div class="section__inner">
         <header class="section__header">
-          <h2 class="section__title" data-i18n="process.title">Cómo trabajamos</h2>
-          <p class="section__lead" data-i18n="process.lead">
-            Un proceso transparente que genera confianza desde la primera reunión hasta el lanzamiento.
-          </p>
+          <h2 class="section__title" data-i18n="process.title">Cómo lo hacemos</h2>
         </header>
-        <ol class="steps">
+        <ol class="steps steps--compact">
           <li class="step">
             <span class="step__num">01</span>
             <div>
-              <h3 data-i18n="process.1.title">Descubrimiento</h3>
-              <p data-i18n="process.1.desc">Entendemos su negocio, usuarios y objetivos. Definimos alcance, prioridades y criterios de éxito.</p>
+              <h3 data-i18n="process.1.title">Entendemos tu objetivo</h3>
+              <p data-i18n="process.1.desc">Qué querés lograr y para quién.</p>
             </div>
           </li>
           <li class="step">
             <span class="step__num">02</span>
             <div>
-              <h3 data-i18n="process.2.title">Diseño técnico</h3>
-              <p data-i18n="process.2.desc">Proponemos arquitectura, tecnologías y plan de entregas con estimaciones claras y hitos verificables.</p>
+              <h3 data-i18n="process.2.title">Diseñamos y planificamos</h3>
+              <p data-i18n="process.2.desc">Arquitectura, plazos y entregas claras.</p>
             </div>
           </li>
           <li class="step">
             <span class="step__num">03</span>
             <div>
-              <h3 data-i18n="process.3.title">Desarrollo iterativo</h3>
-              <p data-i18n="process.3.desc">Construimos en ciclos cortos con avances visibles, pruebas continuas y comunicación constante.</p>
+              <h3 data-i18n="process.3.title">Construimos en ciclos</h3>
+              <p data-i18n="process.3.desc">Avances visibles cada semana.</p>
             </div>
           </li>
           <li class="step">
             <span class="step__num">04</span>
             <div>
-              <h3 data-i18n="process.4.title">Entrega y soporte</h3>
-              <p data-i18n="process.4.desc">Publicamos, documentamos y acompañamos el lanzamiento. Ofrecemos mantenimiento y evolución del producto.</p>
+              <h3 data-i18n="process.4.title">Lanzamos y acompañamos</h3>
+              <p data-i18n="process.4.desc">A producción, con soporte post-lanzamiento.</p>
             </div>
           </li>
         </ol>
       </div>
-    </section>
-
-    <section class="section section--muted" id="tecnologias">
-      <div class="section__inner">
-        <header class="section__header">
-          <h2 class="section__title" data-i18n="tech.title">Tecnologías</h2>
-          <p class="section__lead" data-i18n="tech.lead">
-            Seleccionamos herramientas probadas en producción según las necesidades de cada proyecto.
-          </p>
-        </header>
-        <div class="tags">
-          <span>JavaScript</span>
-          <span>TypeScript</span>
-          <span>React</span>
-          <span>React Native</span>
-          <span>Node.js</span>
-          <span>C#</span>
-          <span>Godot Engine</span>
-          <span>Capacitor</span>
-          <span>Android</span>
-          <span>iOS</span>
-          <span>WebSocket</span>
-          <span>GitHub Actions</span>
-          <span>Web3</span>
-        </div>
+      <div class="section-cta">
+        <a class="btn btn--primary" href="#contacto" data-i18n="cta.call">Agendemos una llamada</a>
       </div>
     </section>
 
-    <section class="section" id="portafolio">
+    <section class="section section--muted" id="portafolio">
       <div class="section__inner">
         <header class="section__header">
-          <h2 class="section__title" data-i18n="portfolio.title">Portafolio</h2>
-          <p class="section__lead" data-i18n="portfolio.lead">
-            Proyectos reales que demuestran nuestra capacidad para resolver desafíos complejos y llevar productos a producción.
-          </p>
+          <h2 class="section__title" data-i18n="portfolio.title">Productos en producción</h2>
+          <p class="section__lead" data-i18n="portfolio.lead">Proyectos reales. Resultados reales.</p>
         </header>
         <div class="grid grid--2">
-          <article class="project">
+          <article class="project project--wow" data-tilt>
             <div class="project__meta">
-              <span class="project__type" data-i18n="portfolio.ct.type">App móvil</span>
-              <span class="project__status" data-i18n="portfolio.ct.status">Android e iOS</span>
+              <span class="project__type" data-i18n="portfolio.ct.type">App móvil + IA</span>
             </div>
             <h3>Finanzas: Control Total</h3>
-            <p data-i18n="portfolio.ct.desc">
-              Aplicación financiera integral con activos, presupuestos, metas, recordatorios y asesoría por IA.
-              Diseñada para registro rápido y sincronización confiable en el día a día, en Android e iOS.
-            </p>
-            <p class="project__stack"><strong>Stack:</strong> <span data-i18n="portfolio.ct.stack">React Native · Android · iOS · IA</span></p>
-            <a class="project__link" href="https://play.google.com/store/apps/details?id=com.maxicoria.controltotal&hl=es_AR" target="_blank" rel="noopener noreferrer" data-i18n="portfolio.ct.link">Ver en Google Play →</a>
+            <p data-i18n="portfolio.ct.desc">App financiera con IA, publicada en Android e iOS.</p>
+            <p class="project__stack"><strong>Stack:</strong> <span data-i18n="portfolio.ct.stack">React Native · IA</span></p>
+            <a class="project__link" href="https://play.google.com/store/apps/details?id=com.maxicoria.controltotal&hl=es_AR" target="_blank" rel="noopener noreferrer" data-i18n="portfolio.ct.link">Google Play →</a>
           </article>
-
-          <article class="project">
+          <article class="project project--wow" data-tilt>
             <div class="project__meta">
-              <span class="project__type" data-i18n="portfolio.dot.type">Videojuego</span>
-              <span class="project__status" data-i18n="portfolio.dot.status">Multijugador PvP</span>
+              <span class="project__type" data-i18n="portfolio.dot.type">Juego 3D PvP</span>
             </div>
             <h3>DOT — Defenders of the Tomb</h3>
-            <p data-i18n="portfolio.dot.desc">
-              Tower defense 3D con economía de partida, oleadas sincronizadas y combate PvP en red.
-              Lobby multijugador y pipeline de actualizaciones para Windows, Android e iOS.
-            </p>
-            <p class="project__stack"><strong>Stack:</strong> <span data-i18n="portfolio.dot.stack">Godot · GDScript · Multiplayer · Android · iOS</span></p>
-            <a class="project__link" href="https://coriamaximiliano.github.io/Tomb-of-Doom/" target="_blank" rel="noopener noreferrer" data-i18n="portfolio.dot.link">Ver sitio del juego →</a>
+            <p data-i18n="portfolio.dot.desc">Tower defense multijugador con economía en partida.</p>
+            <p class="project__stack"><strong>Stack:</strong> <span data-i18n="portfolio.dot.stack">Godot · Multiplayer</span></p>
+            <a class="project__link" href="https://coriamaximiliano.github.io/Tomb-of-Doom/" target="_blank" rel="noopener noreferrer" data-i18n="portfolio.dot.link">Ver juego →</a>
           </article>
-
-          <article class="project">
+          <article class="project project--wow" data-tilt>
             <div class="project__meta">
-              <span class="project__type" data-i18n="portfolio.aa.type">Videojuego</span>
-              <span class="project__status" data-i18n="portfolio.aa.status">Web, Android e iOS en producción</span>
+              <span class="project__type" data-i18n="portfolio.aa.type">Juego web + móvil</span>
             </div>
             <h3>Angry Axies</h3>
-            <p data-i18n="portfolio.aa.desc">
-              Estrategia táctica con motor de física 2D, construcción de fortalezas, PvP online y ranking global.
-              Disponible en navegador, Android e iOS con soporte multilenguaje.
-            </p>
-            <p class="project__stack"><strong>Stack:</strong> <span data-i18n="portfolio.aa.stack">JavaScript · Capacitor · WebSocket · Android · iOS</span></p>
-            <a class="project__link" href="https://coriamaximiliano.github.io/Angry-Axies/" target="_blank" rel="noopener noreferrer" data-i18n="portfolio.aa.link">Ver sitio del juego →</a>
+            <p data-i18n="portfolio.aa.desc">Estrategia PvP online con física 2D y ranking global.</p>
+            <p class="project__stack"><strong>Stack:</strong> <span data-i18n="portfolio.aa.stack">JS · Capacitor · WebSocket</span></p>
+            <a class="project__link" href="https://coriamaximiliano.github.io/Angry-Axies/" target="_blank" rel="noopener noreferrer" data-i18n="portfolio.aa.link">Ver juego →</a>
           </article>
-
-          <article class="project">
+          <article class="project project--wow" data-tilt>
             <div class="project__meta">
-              <span class="project__type" data-i18n="portfolio.tod.type">Plataforma web</span>
-              <span class="project__status" data-i18n="portfolio.tod.status">Ecosistema Web3</span>
+              <span class="project__type" data-i18n="portfolio.tod.type">Plataforma Web3</span>
             </div>
             <h3>Tomb of Doom</h3>
-            <p data-i18n="portfolio.tod.desc">
-              SPA institucional con documentación económica, internacionalización, despliegue automatizado
-              y presentación clara de tokenomics, temporadas y arquitectura NFT.
-            </p>
-            <p class="project__stack"><strong>Stack:</strong> React · TypeScript · Tailwind CSS</p>
+            <p data-i18n="portfolio.tod.desc">SPA con tokenomics, i18n y despliegue automatizado.</p>
+            <p class="project__stack"><strong>Stack:</strong> React · TypeScript</p>
             <a class="project__link" href="https://coriamaximiliano.github.io/Tomb-of-Doom/" target="_blank" rel="noopener noreferrer" data-i18n="portfolio.tod.link">Ver plataforma →</a>
           </article>
         </div>
+      </div>
+      <div class="section-cta">
+        <a class="btn btn--primary" href="#contacto" data-i18n="cta.quote">Pedí un presupuesto</a>
       </div>
     </section>
 
     <section class="section section--accent" id="contacto">
       <div class="section__inner section__inner--contact">
         <div>
-          <h2 class="section__title section__title--light" data-i18n="contact.title">Hablemos de su proyecto</h2>
-          <p class="section__lead section__lead--light" data-i18n="contact.lead">
-            Cuéntenos qué necesita construir. Respondemos con una propuesta clara, sin compromiso inicial.
-          </p>
-          <ul class="contact-list">
+          <h2 class="section__title section__title--light" data-i18n="contact.title">Contanos tu idea</h2>
+          <p class="section__lead section__lead--light" data-i18n="contact.lead">3 campos. Respuesta en menos de 24 h.</p>
+          <ul class="contact-list contact-list--inline">
             <li>
-              <span data-i18n="contact.email.label">Correo</span>
               <a href="mailto:totaldigitalstudio@gmail.com">totaldigitalstudio@gmail.com</a>
             </li>
             <li>
-              <span data-i18n="contact.phone.label">Teléfono</span>
-              <a href="tel:+5492643227101">+54 9 264 322 7101</a>
-            </li>
-            <li>
-              <span data-i18n="contact.location.label">Ubicación</span>
-              <span data-i18n="contact.location.value">San Juan, Argentina</span>
+              <a href="https://wa.me/5492643227101" target="_blank" rel="noopener noreferrer">WhatsApp</a>
             </li>
           </ul>
         </div>
-        <div class="contact-card">
-          <h3 data-i18n="contact.card.title">¿Listo para empezar?</h3>
-          <p data-i18n="contact.card.desc">
-            Envíenos un correo describiendo su idea, plazos y presupuesto estimado. Le responderemos a la brevedad.
-          </p>
-          <a class="btn btn--light" href="mailto:totaldigitalstudio@gmail.com?subject=Consulta%20-%20Total%20Digital%20Studio" data-i18n="contact.card.cta">Enviar consulta por correo</a>
-          <a class="btn btn--ghost-light" href="https://github.com/CoriaMaximiliano" target="_blank" rel="noopener noreferrer" data-i18n="contact.card.github">Ver perfil en GitHub</a>
-        </div>
+        <form class="contact-form" id="contact-form" novalidate>
+          <label class="contact-form__field">
+            <span data-i18n="form.name">Nombre</span>
+            <input type="text" name="name" required autocomplete="name" data-i18n-placeholder="form.namePh" placeholder="Tu nombre" />
+          </label>
+          <label class="contact-form__field">
+            <span data-i18n="form.whatsapp">WhatsApp</span>
+            <input type="tel" name="whatsapp" required autocomplete="tel" data-i18n-placeholder="form.whatsappPh" placeholder="+54 9 ..." />
+          </label>
+          <label class="contact-form__field">
+            <span data-i18n="form.need">¿Qué necesitás?</span>
+            <textarea name="need" rows="3" required data-i18n-placeholder="form.needPh" placeholder="App, juego, sistema, landing..."></textarea>
+          </label>
+          <button class="btn btn--glow btn--full" type="submit" data-i18n="form.submit">Enviar por WhatsApp</button>
+        </form>
       </div>
     </section>
   </main>
@@ -305,15 +260,15 @@
     <div class="site-footer__inner">
       <p class="site-footer__brand">
         <strong>Total Digital Studio</strong>
-        <span data-i18n="footer.rights">© 2026. Todos los derechos reservados.</span>
+        <span data-i18n="footer.rights">© 2026</span>
       </p>
-      <p class="site-footer__credit" data-i18n="footer.credit">
-        Fundado por Maximiliano Andrés del Valle Coria — Desarrollo de software a medida.
-      </p>
+      <p class="site-footer__credit" data-i18n="footer.credit">Productos digitales que generan resultados.</p>
     </div>
   </footer>
 
   <script src="./i18n.js"></script>
   <script src="./nav.js"></script>
+  <script src="./hero-effects.js"></script>
+  <script src="./contact-form.js"></script>
 </body>
 </html>

@@ -266,16 +266,89 @@ a:hover {
 
 /* —— Hero —— */
 .hero {
-  background:
-    linear-gradient(180deg, #ffffff 0%, var(--bg) 100%),
-    radial-gradient(ellipse 80% 60% at 50% -10%, rgba(29, 78, 216, 0.08), transparent);
+  position: relative;
+  overflow: hidden;
   border-bottom: 1px solid var(--border);
 }
 
+.hero--wow {
+  background: #020617;
+  color: #f8fafc;
+  min-height: clamp(28rem, 88vh, 40rem);
+  display: flex;
+  align-items: center;
+}
+
+.hero__canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: auto;
+  z-index: 1;
+}
+
+.hero__glow {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+  animation: floatGlow 12s ease-in-out infinite;
+}
+
+.hero__glow--1 {
+  width: 28rem;
+  height: 28rem;
+  top: -8rem;
+  right: -6rem;
+  background: rgba(59, 130, 246, 0.35);
+}
+
+.hero__glow--2 {
+  width: 22rem;
+  height: 22rem;
+  bottom: -6rem;
+  left: -4rem;
+  background: rgba(139, 92, 246, 0.28);
+  animation-delay: -4s;
+}
+
+@keyframes floatGlow {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(20px, -16px) scale(1.08); }
+}
+
 .hero__inner {
+  position: relative;
+  z-index: 2;
   max-width: var(--max);
   margin: 0 auto;
-  padding: clamp(3rem, 8vw, 5.5rem) 1.25rem clamp(3rem, 6vw, 4rem);
+  padding: clamp(4rem, 10vw, 6rem) 1.25rem clamp(3rem, 6vw, 4rem);
+  transition: transform 0.15s ease-out;
+}
+
+.hero--wow .hero__eyebrow {
+  color: #60a5fa;
+}
+
+.hero--wow .hero__title {
+  max-width: 14ch;
+  color: #fff;
+  text-shadow: 0 0 40px rgba(59, 130, 246, 0.25);
+}
+
+.hero--wow .hero__lead {
+  color: #94a3b8;
+  max-width: 40ch;
+}
+
+.hero--wow .hero__trust li {
+  color: #cbd5e1;
+}
+
+.hero--wow .hero__trust li::before {
+  color: #38bdf8;
 }
 
 .hero__eyebrow {
@@ -397,6 +470,21 @@ a:hover {
 .btn--ghost-light:hover {
   background: rgba(255, 255, 255, 0.08);
   color: #fff !important;
+}
+
+.btn--glow {
+  background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+  color: #fff !important;
+  box-shadow: 0 0 24px rgba(59, 130, 246, 0.45);
+}
+
+.btn--glow:hover {
+  box-shadow: 0 0 36px rgba(99, 102, 241, 0.55);
+  color: #fff !important;
+}
+
+.btn--full {
+  width: 100%;
 }
 
 /* —— Sections —— */
@@ -686,6 +774,120 @@ a:hover {
 
 .contact-card .btn {
   width: 100%;
+}
+
+.section--compact {
+  padding: clamp(2rem, 5vw, 3rem) 0 0;
+}
+
+.section__inner--narrow {
+  max-width: 40rem;
+  text-align: center;
+}
+
+.section__header--center {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.section-cta {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 1.25rem clamp(2.5rem, 5vw, 3.5rem);
+}
+
+.differentiator {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.2rem, 3vw, 1.55rem);
+  font-weight: 600;
+  line-height: 1.45;
+  color: var(--text);
+}
+
+.card--wow,
+.project--wow {
+  transition: transform 0.2s, box-shadow 0.25s, border-color 0.25s;
+}
+
+.card--wow:hover,
+.project--wow:hover {
+  border-color: rgba(59, 130, 246, 0.35);
+  box-shadow: 0 12px 40px rgba(29, 78, 216, 0.12);
+}
+
+.steps--compact .step {
+  padding: 1.1rem 1.25rem;
+}
+
+.steps--compact .step p {
+  font-size: 0.88rem;
+}
+
+.contact-list--inline {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  margin-top: 1.25rem;
+}
+
+.contact-list--inline li {
+  margin: 0;
+}
+
+.contact-form {
+  display: grid;
+  gap: 1rem;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  backdrop-filter: blur(10px);
+}
+
+.contact-form__field {
+  display: grid;
+  gap: 0.35rem;
+}
+
+.contact-form__field span {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 0.75rem 0.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 8px;
+  background: rgba(15, 23, 42, 0.5);
+  color: #fff;
+  font: inherit;
+  resize: vertical;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #60a5fa;
+  box-shadow: 0 0 0 3px rgba(96, 165, 250, 0.25);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero__glow {
+    animation: none;
+  }
+
+  .card--wow:hover,
+  .project--wow:hover,
+  .btn:hover {
+    transform: none;
+  }
 }
 
 /* —— Footer —— */
