@@ -200,7 +200,7 @@ GitHub Pages en el repo: **Settings → Pages → Branch `main` → /(root)**.
 ## Contacto en el sitio
 
 - Email: `totaldigitalstudio@gmail.com`  
-- WhatsApp: `+54 9 264 322 7101` (`5492643227101` en enlaces `wa.me`)
+- WhatsApp: `+5492643227101` (enlace `wa.me/5492643227101`, sin el `+`)
 
 ---
 
