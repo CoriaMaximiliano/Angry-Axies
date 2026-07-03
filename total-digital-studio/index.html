@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="description" content="Total Digital Studio — Convertimos ideas en productos digitales: juegos, apps, SaaS, IA y sistemas que generan resultados." />
   <meta name="theme-color" content="#020617" />
   <title>Total Digital Studio — Productos digitales que generan resultados</title>
@@ -18,7 +20,9 @@
   <header class="site-header">
     <div class="site-header__inner">
       <a class="brand" href="./" aria-label="Total Digital Studio">
-        <span class="brand__mark" aria-hidden="true">TDS</span>
+        <span class="brand__mark" aria-hidden="true">
+          <img class="brand__logo" src="./logo.svg" alt="" width="40" height="40" />
+        </span>
         <span class="brand__text">
           <strong>Total Digital Studio</strong>
           <small data-i18n="brand.tagline">Productos digitales completos</small>
@@ -64,102 +68,223 @@
 
     <section class="section section--compact" id="nosotros">
       <div class="section__inner section__inner--narrow">
-        <p class="differentiator" data-i18n="about.lead">
+        <p class="differentiator reveal" data-reveal data-i18n="about.lead">
           No somos una agencia más. Somos un estudio que lleva juegos, fintech y plataformas complejas a producción real.
         </p>
       </div>
-      <div class="section-cta">
+      <div class="section-cta reveal" data-reveal>
         <a class="btn btn--primary" href="#contacto" data-i18n="cta.quote">Pedí un presupuesto</a>
+      </div>
+    </section>
+
+    <section class="section section--dark" id="por-que">
+      <div class="section__particles" aria-hidden="true"></div>
+      <div class="section__inner">
+        <header class="section__header section__header--center reveal" data-reveal>
+          <h2 class="section__title section__title--light" data-i18n="why.title">¿Por qué elegir Total Digital Studio?</h2>
+          <p class="section__lead section__lead--light" data-i18n="why.lead">Experiencia real en productos complejos, no solo en mockups.</p>
+        </header>
+        <div class="stats-row">
+          <div class="stat reveal" data-reveal>
+            <span class="stat__num" data-count="50" data-suffix="+">0</span>
+            <span class="stat__label" data-i18n="why.stat.products">Productos disponibles</span>
+          </div>
+          <div class="stat reveal" data-reveal>
+            <span class="stat__num" data-count="13" data-suffix="+">0</span>
+            <span class="stat__label" data-i18n="why.stat.tech">Tecnologías aplicables</span>
+          </div>
+          <div class="stat reveal" data-reveal>
+            <span class="stat__num" data-count="24" data-suffix="h">0</span>
+            <span class="stat__label" data-i18n="why.stat.response">Respuesta garantizada</span>
+          </div>
+        </div>
+        <ul class="authority-grid">
+          <li class="authority-item reveal" data-reveal>
+            <span class="authority-item__check" aria-hidden="true">✓</span>
+            <span data-i18n="why.1">Apps publicadas</span>
+          </li>
+          <li class="authority-item reveal" data-reveal>
+            <span class="authority-item__check" aria-hidden="true">✓</span>
+            <span data-i18n="why.2">Juegos online</span>
+          </li>
+          <li class="authority-item reveal" data-reveal>
+            <span class="authority-item__check" aria-hidden="true">✓</span>
+            <span data-i18n="why.3">IA integrada</span>
+          </li>
+          <li class="authority-item reveal" data-reveal>
+            <span class="authority-item__check" aria-hidden="true">✓</span>
+            <span data-i18n="why.4">Desarrollo Full Stack</span>
+          </li>
+          <li class="authority-item reveal" data-reveal>
+            <span class="authority-item__check" aria-hidden="true">✓</span>
+            <span data-i18n="why.5">Backend escalable</span>
+          </li>
+          <li class="authority-item reveal" data-reveal>
+            <span class="authority-item__check" aria-hidden="true">✓</span>
+            <span data-i18n="why.6">Diseño UX</span>
+          </li>
+          <li class="authority-item reveal" data-reveal>
+            <span class="authority-item__check" aria-hidden="true">✓</span>
+            <span data-i18n="why.7">Soporte posterior</span>
+          </li>
+        </ul>
       </div>
     </section>
 
     <section class="section section--muted" id="servicios">
       <div class="section__inner">
-        <header class="section__header section__header--center">
+        <header class="section__header section__header--center reveal" data-reveal>
           <h2 class="section__title" data-i18n="services.title">Qué construimos</h2>
           <p class="section__lead" data-i18n="services.lead">Productos digitales completos. No solo páginas.</p>
         </header>
         <div class="grid grid--3">
-          <article class="card card--wow" data-tilt>
+          <article class="card card--wow float-card reveal" data-reveal data-tilt>
             <div class="card__icon" aria-hidden="true">🎮</div>
             <h3 data-i18n="services.games.title">Videojuegos</h3>
             <p data-i18n="services.games.desc">2D/3D, multijugador y física avanzada. Web, PC, Android e iOS.</p>
           </article>
-          <article class="card card--wow" data-tilt>
+          <article class="card card--wow float-card reveal" data-reveal data-tilt>
             <div class="card__icon" aria-hidden="true">📱</div>
             <h3 data-i18n="services.mobile.title">Apps móviles</h3>
             <p data-i18n="services.mobile.desc">Android e iOS publicadas en tiendas, listas para escalar.</p>
           </article>
-          <article class="card card--wow" data-tilt>
+          <article class="card card--wow float-card reveal" data-reveal data-tilt>
             <div class="card__icon" aria-hidden="true">☁️</div>
             <h3 data-i18n="services.saas.title">Plataformas SaaS</h3>
             <p data-i18n="services.saas.desc">Suscripciones, paneles de usuario y backends escalables.</p>
           </article>
-          <article class="card card--wow" data-tilt>
+          <article class="card card--wow float-card reveal" data-reveal data-tilt>
             <div class="card__icon" aria-hidden="true">🤖</div>
             <h3 data-i18n="services.ai.title">Automatización con IA</h3>
             <p data-i18n="services.ai.desc">Asistentes, flujos inteligentes y features con IA integrada.</p>
           </article>
-          <article class="card card--wow" data-tilt>
+          <article class="card card--wow float-card reveal" data-reveal data-tilt>
             <div class="card__icon" aria-hidden="true">🏢</div>
             <h3 data-i18n="services.enterprise.title">Sistemas empresariales</h3>
             <p data-i18n="services.enterprise.desc">ERP, inventarios, operaciones y lógica de negocio robusta.</p>
           </article>
-          <article class="card card--wow" data-tilt>
+          <article class="card card--wow float-card reveal" data-reveal data-tilt>
             <div class="card__icon" aria-hidden="true">🚀</div>
             <h3 data-i18n="services.landing.title">Landings de conversión</h3>
             <p data-i18n="services.landing.desc">Páginas rápidas, claras y diseñadas para vender.</p>
           </article>
-          <article class="card card--wow" data-tilt>
+          <article class="card card--wow float-card reveal" data-reveal data-tilt>
             <div class="card__icon" aria-hidden="true">📊</div>
             <h3 data-i18n="services.dashboard.title">Dashboards financieros</h3>
             <p data-i18n="services.dashboard.desc">Métricas, reportes y visualización de datos en tiempo real.</p>
           </article>
-          <article class="card card--wow" data-tilt>
+          <article class="card card--wow float-card reveal" data-reveal data-tilt>
             <div class="card__icon" aria-hidden="true">🔗</div>
             <h3 data-i18n="services.api.title">Integraciones API</h3>
             <p data-i18n="services.api.desc">Pagos, terceros, sincronización y ecosistemas conectados.</p>
           </article>
-          <article class="card card--wow" data-tilt>
+          <article class="card card--wow float-card reveal" data-reveal data-tilt>
             <div class="card__icon" aria-hidden="true">⚡</div>
             <h3 data-i18n="services.custom.title">Soluciones a medida</h3>
             <p data-i18n="services.custom.desc">Si es digital y complejo, lo diseñamos y lo lanzamos.</p>
           </article>
         </div>
       </div>
-      <div class="section-cta">
+      <div class="section-cta reveal" data-reveal>
         <a class="btn btn--primary" href="#contacto" data-i18n="cta.start">Empecemos tu proyecto</a>
+      </div>
+    </section>
+
+    <section class="section section--tech" id="tecnologia">
+      <div class="section__inner">
+        <header class="section__header section__header--center reveal" data-reveal>
+          <h2 class="section__title" data-i18n="tech.title">Trabajamos con</h2>
+          <p class="section__lead" data-i18n="tech.lead">Stack moderno para productos que escalan en producción.</p>
+        </header>
+        <div class="tech-grid">
+          <div class="tech-item reveal" data-reveal>
+            <img src="https://cdn.simpleicons.org/godotengine/478cbf" alt="" width="32" height="32" loading="lazy" />
+            <span>Godot</span>
+          </div>
+          <div class="tech-item reveal" data-reveal>
+            <img src="https://cdn.simpleicons.org/react/61DAFB" alt="" width="32" height="32" loading="lazy" />
+            <span>React</span>
+          </div>
+          <div class="tech-item reveal" data-reveal>
+            <img src="https://cdn.simpleicons.org/react/61DAFB" alt="" width="32" height="32" loading="lazy" />
+            <span>React Native</span>
+          </div>
+          <div class="tech-item reveal" data-reveal>
+            <img src="https://cdn.simpleicons.org/python/3776AB" alt="" width="32" height="32" loading="lazy" />
+            <span>Python</span>
+          </div>
+          <div class="tech-item reveal" data-reveal>
+            <img src="https://cdn.simpleicons.org/fastapi/009688" alt="" width="32" height="32" loading="lazy" />
+            <span>FastAPI</span>
+          </div>
+          <div class="tech-item reveal" data-reveal>
+            <img src="https://cdn.simpleicons.org/postgresql/4169E1" alt="" width="32" height="32" loading="lazy" />
+            <span>PostgreSQL</span>
+          </div>
+          <div class="tech-item reveal" data-reveal>
+            <img src="https://cdn.simpleicons.org/firebase/FFCA28" alt="" width="32" height="32" loading="lazy" />
+            <span>Firebase</span>
+          </div>
+          <div class="tech-item reveal" data-reveal>
+            <img src="https://cdn.simpleicons.org/docker/2496ED" alt="" width="32" height="32" loading="lazy" />
+            <span>Docker</span>
+          </div>
+          <div class="tech-item reveal" data-reveal>
+            <img src="./icons/csharp.svg" alt="" width="32" height="32" loading="lazy" />
+            <span>C#</span>
+          </div>
+          <div class="tech-item reveal" data-reveal>
+            <img src="https://cdn.simpleicons.org/typescript/3178C6" alt="" width="32" height="32" loading="lazy" />
+            <span>TypeScript</span>
+          </div>
+          <div class="tech-item reveal" data-reveal>
+            <img src="https://cdn.simpleicons.org/nodedotjs/339933" alt="" width="32" height="32" loading="lazy" />
+            <span>Node</span>
+          </div>
+          <div class="tech-item reveal" data-reveal>
+            <img src="./icons/openai.svg" alt="" width="32" height="32" loading="lazy" />
+            <span>OpenAI</span>
+          </div>
+          <div class="tech-item reveal" data-reveal>
+            <img src="https://cdn.simpleicons.org/anthropic/CC785C" alt="" width="32" height="32" loading="lazy" />
+            <span>Claude</span>
+          </div>
+          <div class="tech-item reveal" data-reveal>
+            <img src="https://cdn.simpleicons.org/googlegemini/8E75B2" alt="" width="32" height="32" loading="lazy" />
+            <span>Gemini</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <section class="section" id="proceso">
       <div class="section__inner">
-        <header class="section__header">
+        <header class="section__header reveal" data-reveal>
           <h2 class="section__title" data-i18n="process.title">Cómo lo hacemos</h2>
         </header>
         <ol class="steps steps--compact">
-          <li class="step">
+          <li class="step reveal" data-reveal>
             <span class="step__num">01</span>
             <div>
               <h3 data-i18n="process.1.title">Entendemos tu objetivo</h3>
               <p data-i18n="process.1.desc">Qué querés lograr y para quién.</p>
             </div>
           </li>
-          <li class="step">
+          <li class="step reveal" data-reveal>
             <span class="step__num">02</span>
             <div>
               <h3 data-i18n="process.2.title">Diseñamos y planificamos</h3>
               <p data-i18n="process.2.desc">Arquitectura, plazos y entregas claras.</p>
             </div>
           </li>
-          <li class="step">
+          <li class="step reveal" data-reveal>
             <span class="step__num">03</span>
             <div>
               <h3 data-i18n="process.3.title">Construimos en ciclos</h3>
               <p data-i18n="process.3.desc">Avances visibles cada semana.</p>
             </div>
           </li>
-          <li class="step">
+          <li class="step reveal" data-reveal>
             <span class="step__num">04</span>
             <div>
               <h3 data-i18n="process.4.title">Lanzamos y acompañamos</h3>
@@ -175,12 +300,12 @@
 
     <section class="section section--muted" id="portafolio">
       <div class="section__inner">
-        <header class="section__header">
+        <header class="section__header reveal" data-reveal>
           <h2 class="section__title" data-i18n="portfolio.title">Productos en producción</h2>
           <p class="section__lead" data-i18n="portfolio.lead">Proyectos reales. Resultados reales.</p>
         </header>
         <div class="grid grid--2">
-          <article class="project project--wow" data-tilt>
+          <article class="project project--wow float-card reveal" data-reveal data-tilt>
             <div class="project__meta">
               <span class="project__type" data-i18n="portfolio.ct.type">App móvil + IA</span>
             </div>
@@ -189,16 +314,7 @@
             <p class="project__stack"><strong>Stack:</strong> <span data-i18n="portfolio.ct.stack">React Native · IA</span></p>
             <a class="project__link" href="https://play.google.com/store/apps/details?id=com.maxicoria.controltotal&hl=es_AR" target="_blank" rel="noopener noreferrer" data-i18n="portfolio.ct.link">Google Play →</a>
           </article>
-          <article class="project project--wow" data-tilt>
-            <div class="project__meta">
-              <span class="project__type" data-i18n="portfolio.dot.type">Juego 3D PvP</span>
-            </div>
-            <h3>DOT — Defenders of the Tomb</h3>
-            <p data-i18n="portfolio.dot.desc">Tower defense multijugador con economía en partida.</p>
-            <p class="project__stack"><strong>Stack:</strong> <span data-i18n="portfolio.dot.stack">Godot · Multiplayer</span></p>
-            <a class="project__link" href="https://coriamaximiliano.github.io/Tomb-of-Doom/" target="_blank" rel="noopener noreferrer" data-i18n="portfolio.dot.link">Ver juego →</a>
-          </article>
-          <article class="project project--wow" data-tilt>
+          <article class="project project--wow float-card reveal" data-reveal data-tilt>
             <div class="project__meta">
               <span class="project__type" data-i18n="portfolio.aa.type">Juego web + móvil</span>
             </div>
@@ -207,7 +323,7 @@
             <p class="project__stack"><strong>Stack:</strong> <span data-i18n="portfolio.aa.stack">JS · Capacitor · WebSocket</span></p>
             <a class="project__link" href="https://coriamaximiliano.github.io/Angry-Axies/" target="_blank" rel="noopener noreferrer" data-i18n="portfolio.aa.link">Ver juego →</a>
           </article>
-          <article class="project project--wow" data-tilt>
+          <article class="project project--wow float-card reveal" data-reveal data-tilt>
             <div class="project__meta">
               <span class="project__type" data-i18n="portfolio.tod.type">Plataforma Web3</span>
             </div>
@@ -215,6 +331,15 @@
             <p data-i18n="portfolio.tod.desc">SPA con tokenomics, i18n y despliegue automatizado.</p>
             <p class="project__stack"><strong>Stack:</strong> React · TypeScript</p>
             <a class="project__link" href="https://coriamaximiliano.github.io/Tomb-of-Doom/" target="_blank" rel="noopener noreferrer" data-i18n="portfolio.tod.link">Ver plataforma →</a>
+          </article>
+          <article class="project project--wow float-card reveal" data-reveal data-tilt>
+            <div class="project__meta">
+              <span class="project__type" data-i18n="portfolio.dot.type">Juego 3D PvP</span>
+            </div>
+            <h3>DOT — Defenders of the Tomb</h3>
+            <p data-i18n="portfolio.dot.desc">Tower defense multijugador con economía en partida.</p>
+            <p class="project__stack"><strong>Stack:</strong> <span data-i18n="portfolio.dot.stack">Godot · Multiplayer</span></p>
+            <a class="project__link" href="https://coriamaximiliano.github.io/Tomb-of-Doom/" target="_blank" rel="noopener noreferrer" data-i18n="portfolio.dot.link">Ver juego →</a>
           </article>
         </div>
       </div>
@@ -227,7 +352,7 @@
       <div class="section__inner section__inner--contact">
         <div>
           <h2 class="section__title section__title--light" data-i18n="contact.title">Contanos tu idea</h2>
-          <p class="section__lead section__lead--light" data-i18n="contact.lead">3 campos. Respuesta en menos de 24 h.</p>
+          <p class="section__lead section__lead--light" data-i18n="contact.lead">Respuesta en menos de 24 h.</p>
           <ul class="contact-list contact-list--inline">
             <li>
               <a href="mailto:totaldigitalstudio@gmail.com">totaldigitalstudio@gmail.com</a>
@@ -259,6 +384,7 @@
   <footer class="site-footer">
     <div class="site-footer__inner">
       <p class="site-footer__brand">
+        <img class="site-footer__logo" src="./logo.svg" alt="" width="28" height="28" />
         <strong>Total Digital Studio</strong>
         <span data-i18n="footer.rights">© 2026</span>
       </p>
@@ -269,6 +395,7 @@
   <script src="./i18n.js"></script>
   <script src="./nav.js"></script>
   <script src="./hero-effects.js"></script>
+  <script src="./scroll-animations.js"></script>
   <script src="./contact-form.js"></script>
 </body>
 </html>

@@ -5,6 +5,8 @@
   var mobileNav = document.getElementById("mobile-nav");
   if (!toggle || !mobileNav) return;
 
+  var desktopMq = window.matchMedia("(min-width: 900px)");
+
   function closeMenu() {
     toggle.setAttribute("aria-expanded", "false");
     mobileNav.hidden = true;
@@ -28,4 +30,15 @@
   document.addEventListener("keydown", function (e) {
     if (e.key === "Escape") closeMenu();
   });
+
+  function onViewportChange() {
+    if (desktopMq.matches) closeMenu();
+  }
+
+  window.addEventListener("resize", onViewportChange);
+  if (desktopMq.addEventListener) {
+    desktopMq.addEventListener("change", onViewportChange);
+  } else if (desktopMq.addListener) {
+    desktopMq.addListener(onViewportChange);
+  }
 })();

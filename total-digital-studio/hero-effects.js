@@ -5,11 +5,18 @@
   if (!canvas) return;
 
   var prefersReduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var isCoarse = window.matchMedia("(pointer: coarse)").matches;
+  var isNarrow = window.matchMedia("(max-width: 639px)").matches;
   var ctx = canvas.getContext("2d");
   var particles = [];
   var mouse = { x: -9999, y: -9999 };
   var rafId = 0;
-  var count = prefersReduced ? 28 : 72;
+
+  function particleCount() {
+    if (prefersReduced) return 20;
+    if (isNarrow || isCoarse) return 36;
+    return 72;
+  }
 
   function resize() {
     var hero = canvas.parentElement;
@@ -23,6 +30,7 @@
   }
 
   function initParticles() {
+    var count = particleCount();
     particles = [];
     for (var i = 0; i < count; i++) {
       particles.push({
@@ -38,6 +46,8 @@
   function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+    var linkDist = isNarrow ? 90 : 120;
+
     for (var i = 0; i < particles.length; i++) {
       var p = particles[i];
       p.x += p.vx;
@@ -46,12 +56,14 @@
       if (p.x < 0 || p.x > canvas.width) p.vx *= -1;
       if (p.y < 0 || p.y > canvas.height) p.vy *= -1;
 
-      var dx = mouse.x - p.x;
-      var dy = mouse.y - p.y;
-      var dist = Math.sqrt(dx * dx + dy * dy);
-      if (dist < 140 && dist > 0) {
-        p.x -= (dx / dist) * 0.6;
-        p.y -= (dy / dist) * 0.6;
+      if (!isCoarse) {
+        var dx = mouse.x - p.x;
+        var dy = mouse.y - p.y;
+        var dist = Math.sqrt(dx * dx + dy * dy);
+        if (dist < 140 && dist > 0) {
+          p.x -= (dx / dist) * 0.6;
+          p.y -= (dy / dist) * 0.6;
+        }
       }
 
       ctx.beginPath();
@@ -64,8 +76,8 @@
         var ddx = p.x - q.x;
         var ddy = p.y - q.y;
         var d = Math.sqrt(ddx * ddx + ddy * ddy);
-        if (d < 120) {
-          ctx.strokeStyle = "rgba(59, 130, 246, " + (1 - d / 120) * 0.22 + ")";
+        if (d < linkDist) {
+          ctx.strokeStyle = "rgba(59, 130, 246, " + (1 - d / linkDist) * 0.22 + ")";
           ctx.lineWidth = 1;
           ctx.beginPath();
           ctx.moveTo(p.x, p.y);
@@ -79,6 +91,7 @@
   }
 
   function onMove(e) {
+    if (isCoarse) return;
     var rect = canvas.getBoundingClientRect();
     var clientX = e.touches ? e.touches[0].clientX : e.clientX;
     var clientY = e.touches ? e.touches[0].clientY : e.clientY;
@@ -96,17 +109,18 @@
   if (!prefersReduced) draw();
 
   window.addEventListener("resize", function () {
+    isNarrow = window.matchMedia("(max-width: 639px)").matches;
     resize();
     initParticles();
   });
 
-  canvas.addEventListener("mousemove", onMove);
-  canvas.addEventListener("touchmove", onMove, { passive: true });
-  canvas.addEventListener("mouseleave", onLeave);
-  canvas.addEventListener("touchend", onLeave);
+  if (!isCoarse) {
+    canvas.addEventListener("mousemove", onMove);
+    canvas.addEventListener("mouseleave", onLeave);
+  }
 
   document.querySelectorAll("[data-tilt]").forEach(function (el) {
-    if (prefersReduced) return;
+    if (prefersReduced || isCoarse) return;
     el.addEventListener("mousemove", function (e) {
       var rect = el.getBoundingClientRect();
       var x = (e.clientX - rect.left) / rect.width - 0.5;
