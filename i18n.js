@@ -3,6 +3,7 @@
 
   var LANGS = ["en", "es", "fil", "zh"];
   var STORAGE_KEY = "angryaxies_site_lang";
+  var CHOICE_KEY = "angryaxies_site_lang_choice";
 
   var LABELS = {
     en: "English",
@@ -234,10 +235,75 @@
     },
   };
 
+  // localStorage puede lanzar en WebView (Android/iOS) con cookies bloqueadas o file://
+  function storage() {
+    try {
+      return window.localStorage || null;
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function readStored(key) {
+    var store = storage();
+    if (!store) return null;
+    try {
+      return store.getItem(key);
+    } catch (e) {
+      return null;
+    }
+  }
+
+  function writeStored(key, value) {
+    var store = storage();
+    if (!store) return;
+    try {
+      store.setItem(key, value);
+    } catch (e) {}
+  }
+
+  // "es-AR" -> "es", "zh-Hant-TW" -> "zh", "tl-PH" -> "fil"
+  function normalizeTag(tag) {
+    if (!tag) return null;
+    var full = String(tag).toLowerCase().replace(/_/g, "-");
+    var base = full.split("-")[0];
+    if (base === "zh" || base === "cmn" || base === "yue") return "zh";
+    if (base === "fil" || base === "tl" || base === "tgl") return "fil";
+    if (LANGS.indexOf(base) !== -1) return base;
+    return null;
+  }
+
+  function deviceLangs() {
+    var nav = window.navigator || {};
+    var list = [];
+
+    if (nav.languages && nav.languages.length) {
+      list = list.concat(Array.prototype.slice.call(nav.languages));
+    }
+    // userLanguage/browserLanguage: WebViews viejos de Android
+    [nav.language, nav.userLanguage, nav.browserLanguage, nav.systemLanguage].forEach(function (tag) {
+      if (tag) list.push(tag);
+    });
+
+    return list;
+  }
+
+  function detectDeviceLang() {
+    var tags = deviceLangs();
+    for (var i = 0; i < tags.length; i++) {
+      var code = normalizeTag(tags[i]);
+      if (code) return code;
+    }
+    return null;
+  }
+
   function detectLang() {
-    var saved = localStorage.getItem(STORAGE_KEY);
-    if (saved && STRINGS[saved]) return saved;
-    return "en";
+    // Solo respetamos lo guardado si el usuario eligió el idioma a mano.
+    if (readStored(CHOICE_KEY) === "1") {
+      var saved = readStored(STORAGE_KEY);
+      if (saved && STRINGS[saved]) return saved;
+    }
+    return detectDeviceLang() || "en";
   }
 
   function t(lang, key) {
@@ -245,9 +311,10 @@
     return pack[key] != null ? pack[key] : STRINGS.en[key] || "";
   }
 
-  function applyLang(lang) {
+  function applyLang(lang, isUserChoice) {
     if (LANGS.indexOf(lang) === -1) lang = "en";
-    localStorage.setItem(STORAGE_KEY, lang);
+    writeStored(STORAGE_KEY, lang);
+    if (isUserChoice) writeStored(CHOICE_KEY, "1");
     document.documentElement.lang = lang === "fil" ? "fil" : lang === "zh" ? "zh-Hans" : lang;
 
     var page = document.body.getAttribute("data-page") || "index";
@@ -285,7 +352,7 @@
       btn.setAttribute("data-lang", code);
       btn.textContent = LABELS[code];
       btn.addEventListener("click", function () {
-        applyLang(code);
+        applyLang(code, true);
       });
       nav.appendChild(btn);
     });
@@ -317,5 +384,9 @@
     applyLang(detectLang());
   });
 
-  window.AngryAxiesSiteI18n = { applyLang: applyLang, detectLang: detectLang };
+  window.AngryAxiesSiteI18n = {
+    applyLang: applyLang,
+    detectLang: detectLang,
+    detectDeviceLang: detectDeviceLang,
+  };
 })();
