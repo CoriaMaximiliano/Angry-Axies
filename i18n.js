@@ -29,22 +29,22 @@
       "index.features.3": "Online PvP against other players",
       "index.features.4": "Attack and defense powers",
       "index.features.5": "Unique building blocks in this game that take strategy to the next level",
-      "index.features.6": "Android app and browser to play wherever you want",
-      "index.features.7": "Variety of languages: English, Spanish, Filipino, and Chinese",
+      "index.features.6": "Play in landscape on browser, Android, iPhone and iPad",
+      "index.features.7": "Game languages: English, Spanish, Filipino, and Japanese",
       "index.community.title": "Community",
       "index.btn.discord": "Join Discord",
       "index.footer.server": "Game server:",
       "index.footer.install": "Android installation instructions",
       "download.title": "Angry Axies for Android (APK)",
       "download.intro":
-        "The official download for the current build is on GitHub, in release <strong>1.142</strong>. Open the release page and download the APK from Assets.",
+        'This page keeps the older <strong>1.142</strong> APK. For the store version, use <a href="https://play.google.com/store/apps/details?id=com.maxicoria.angryaxies">Google Play</a>. See the <a href="./vibeathon.html">play and install guide</a> for all platforms.',
       "download.btn.release": "Open release 1.142 on GitHub",
       "download.direct.label": "<strong>Direct download for this version (1.142):</strong>",
       "download.latest":
         'You can also use the latest published release: <a href="https://github.com/CoriaMaximiliano/Angry-Axies/releases/latest" style="color:#7eb8ff;">releases/latest</a>',
       "download.req.title": "Requirements",
       "download.req.1": "Android 6.0 or higher",
-      "download.req.2": "Landscape orientation recommended",
+      "download.req.2": "Landscape orientation required",
       "download.req.3": "Internet connection for leaderboard and PvP",
       "download.install.title": "Install on your phone",
       "download.install.1":
@@ -58,7 +58,7 @@
       "download.server":
         "The app bundles the same game as the browser and connects to <code>angryaxies.servehttp.com</code> for leaderboard, health, and PvP.",
       "download.web":
-        '<strong>Play without installing:</strong> use the web version at <a href="http://angryaxies.servehttp.com/" style="color:#7eb8ff;">angryaxies.servehttp.com</a> (best on PC; also works in mobile browsers).',
+        '<strong>Play without installing:</strong> use the web version at <a href="https://angryaxies.servehttp.com/" style="color:#7eb8ff;">angryaxies.servehttp.com</a> (best on PC; also works in mobile browsers).',
       "download.publisher":
         "<strong>Updates (for publishers):</strong> when you build a new APK with <code>npm run android:apk</code>, rename it to <code>AngryAxies-X.XXX.apk</code>, create a GitHub release with that tag, and update the links on this page.",
       "download.security":
@@ -84,22 +84,22 @@
       "index.features.3": "PvP en línea contra otros jugadores",
       "index.features.4": "Poderes de ataque y defensa",
       "index.features.5": "Bloques de construcción únicos en este juego, que llevarán las estrategias a otro nivel",
-      "index.features.6": "App Android y navegador para jugar donde quieras",
-      "index.features.7": "Variedad de idiomas: inglés, español, filipino y chino",
+      "index.features.6": "Jugá en horizontal en navegador, Android, iPhone y iPad",
+      "index.features.7": "Idiomas del juego: inglés, español, filipino y japonés",
       "index.community.title": "Comunidad",
       "index.btn.discord": "Unite al Discord",
       "index.footer.server": "Servidor de juego:",
       "index.footer.install": "Instrucciones de instalación Android",
       "download.title": "Angry Axies para Android (APK)",
       "download.intro":
-        "La descarga oficial del build actual está en GitHub, en la release <strong>1.142</strong>. Abrí la página del release y descargá el APK desde «Assets».",
+        'Esta página conserva la APK anterior <strong>1.142</strong>. Para la versión de la tienda, usá <a href="https://play.google.com/store/apps/details?id=com.maxicoria.angryaxies">Google Play</a>. Consultá la <a href="./vibeathon.html">guía de acceso e instalación</a> para todas las plataformas.',
       "download.btn.release": "Abrir release 1.142 en GitHub",
       "download.direct.label": "<strong>Descarga directa de esta versión (1.142):</strong>",
       "download.latest":
         'También podés usar la última release publicada: <a href="https://github.com/CoriaMaximiliano/Angry-Axies/releases/latest" style="color:#7eb8ff;">releases/latest</a>',
       "download.req.title": "Requisitos",
       "download.req.1": "Android 6.0 o superior",
-      "download.req.2": "Orientación horizontal recomendada",
+      "download.req.2": "Orientación horizontal obligatoria",
       "download.req.3": "Conexión a internet para ranking y PvP",
       "download.install.title": "Instalación en el celular",
       "download.install.1":
@@ -113,7 +113,7 @@
       "download.server":
         "La app empaqueta el mismo juego que el navegador y se conecta al servidor en <code>angryaxies.servehttp.com</code> para ranking, health y PvP.",
       "download.web":
-        '<strong>Jugar sin instalar:</strong> podés usar la versión web en <a href="http://angryaxies.servehttp.com/" style="color:#7eb8ff;">angryaxies.servehttp.com</a> (ideal en PC; en móvil también funciona en el navegador).',
+        '<strong>Jugar sin instalar:</strong> podés usar la versión web en <a href="https://angryaxies.servehttp.com/" style="color:#7eb8ff;">angryaxies.servehttp.com</a> (ideal en PC; en móvil también funciona en el navegador).',
       "download.publisher":
         "<strong>Actualizaciones (quien publica):</strong> al generar una APK nueva con <code>npm run android:apk</code>, renombrala a <code>AngryAxies-X.XXX.apk</code>, creá una release en GitHub con ese tag y actualizá los enlaces en esta página.",
       "download.security":
@@ -139,22 +139,22 @@
       "index.features.3": "Online PvP laban sa ibang manlalaro",
       "index.features.4": "Mga power ng pag-atake at depensa",
       "index.features.5": "Mga natatanging building block sa larong ito na magdadala ng estratehiya sa susunod na antas",
-      "index.features.6": "Android app at browser para maglaro kahit saan",
-      "index.features.7": "Iba't ibang wika: Ingles, Espanyol, Filipino, at Tsino",
+      "index.features.6": "Maglaro nang landscape sa browser, Android, iPhone at iPad",
+      "index.features.7": "Mga wika ng laro: Ingles, Espanyol, Filipino, at Hapon",
       "index.community.title": "Komunidad",
       "index.btn.discord": "Sumali sa Discord",
       "index.footer.server": "Game server:",
       "index.footer.install": "Mga tagubilin sa pag-install sa Android",
       "download.title": "Angry Axies para sa Android (APK)",
       "download.intro":
-        "Ang opisyal na download ng kasalukuyang build ay nasa GitHub, sa release na <strong>1.142</strong>. Buksan ang release page at i-download ang APK mula sa Assets.",
+        'Nasa pahinang ito ang lumang APK na <strong>1.142</strong>. Para sa bersyon sa tindahan, gamitin ang <a href="https://play.google.com/store/apps/details?id=com.maxicoria.angryaxies">Google Play</a>. Tingnan ang <a href="./vibeathon.html">gabay sa pag-install</a> para sa lahat ng platform.',
       "download.btn.release": "Buksan ang release 1.142 sa GitHub",
       "download.direct.label": "<strong>Direktang download para sa bersyong ito (1.142):</strong>",
       "download.latest":
         'Maaari mo ring gamitin ang pinakabagong release: <a href="https://github.com/CoriaMaximiliano/Angry-Axies/releases/latest" style="color:#7eb8ff;">releases/latest</a>',
       "download.req.title": "Mga kinakailangan",
       "download.req.1": "Android 6.0 o mas mataas",
-      "download.req.2": "Inirerekomenda ang landscape orientation",
+      "download.req.2": "Kailangan ang landscape orientation",
       "download.req.3": "Kailangan ng internet para sa leaderboard at PvP",
       "download.install.title": "Pag-install sa cellphone",
       "download.install.1":
@@ -168,7 +168,7 @@
       "download.server":
         "Pareho ang laro sa browser at kumokonekta sa <code>angryaxies.servehttp.com</code> para sa leaderboard, health, at PvP.",
       "download.web":
-        '<strong>Maglaro nang hindi nag-i-install:</strong> gamitin ang web version sa <a href="http://angryaxies.servehttp.com/" style="color:#7eb8ff;">angryaxies.servehttp.com</a> (mas mainam sa PC; gumagana rin sa mobile browser).',
+        '<strong>Maglaro nang hindi nag-i-install:</strong> gamitin ang web version sa <a href="https://angryaxies.servehttp.com/" style="color:#7eb8ff;">angryaxies.servehttp.com</a> (mas mainam sa PC; gumagana rin sa mobile browser).',
       "download.publisher":
         "<strong>Mga update (para sa publisher):</strong> kapag gumawa ng bagong APK gamit ang <code>npm run android:apk</code>, palitan ang pangalan sa <code>AngryAxies-X.XXX.apk</code>, gumawa ng GitHub release na may tag na iyon, at i-update ang mga link sa pahinang ito.",
       "download.security":
@@ -194,22 +194,22 @@
       "index.features.3": "在线 PvP 对战其他玩家",
       "index.features.4": "攻击与防御技能",
       "index.features.5": "本游戏独有的建造方块，让策略更上一层楼",
-      "index.features.6": "Android 应用与浏览器，随时随地畅玩",
-      "index.features.7": "多种语言：英语、西班牙语、菲律宾语和中文",
+      "index.features.6": "在浏览器、Android、iPhone 和 iPad 上横屏游玩",
+      "index.features.7": "游戏语言：英语、西班牙语、菲律宾语和日语",
       "index.community.title": "社区",
       "index.btn.discord": "加入 Discord",
       "index.footer.server": "游戏服务器：",
       "index.footer.install": "Android 安装说明",
       "download.title": "Angry Axies Android 版（APK）",
       "download.intro":
-        "当前版本的官方下载在 GitHub 上，标签为 <strong>1.142</strong> 的 release。打开 release 页面，从 Assets 下载 APK。",
+        '本页保留旧版 <strong>1.142</strong> APK。商店版本请使用 <a href="https://play.google.com/store/apps/details?id=com.maxicoria.angryaxies">Google Play</a>。所有平台的说明请参阅<a href="./vibeathon.html">安装指南</a>。',
       "download.btn.release": "在 GitHub 打开 1.142 release",
       "download.direct.label": "<strong>此版本（1.142）直接下载：</strong>",
       "download.latest":
         '也可使用最新发布的 release：<a href="https://github.com/CoriaMaximiliano/Angry-Axies/releases/latest" style="color:#7eb8ff;">releases/latest</a>',
       "download.req.title": "系统要求",
       "download.req.1": "Android 6.0 或更高",
-      "download.req.2": "建议使用横屏",
+      "download.req.2": "必须使用横屏",
       "download.req.3": "排行榜与 PvP 需要网络连接",
       "download.install.title": "在手机上安装",
       "download.install.1":
@@ -223,7 +223,7 @@
       "download.server":
         "应用与浏览器版为同一游戏，通过 <code>angryaxies.servehttp.com</code> 连接排行榜、health 与 PvP。",
       "download.web":
-        '<strong>无需安装即可游玩：</strong>使用网页版 <a href="http://angryaxies.servehttp.com/" style="color:#7eb8ff;">angryaxies.servehttp.com</a>（PC 体验更佳；手机浏览器也可）。',
+        '<strong>无需安装即可游玩：</strong>使用网页版 <a href="https://angryaxies.servehttp.com/" style="color:#7eb8ff;">angryaxies.servehttp.com</a>（PC 体验更佳；手机浏览器也可）。',
       "download.publisher":
         "<strong>更新说明（发布者）：</strong>使用 <code>npm run android:apk</code> 生成新 APK 后，重命名为 <code>AngryAxies-X.XXX.apk</code>，在 GitHub 创建对应 tag 的 release，并更新本页链接。",
       "download.security":

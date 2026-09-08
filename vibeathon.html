@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Play Angry Axies: browser, Android and iPhone access, controls, product vision and Axie Laboratory integration.">
+  <title>Angry Axies — Play &amp; Vibeathon Guide</title>
+  <link rel="stylesheet" href="./site.css">
+  <style>
+    .guide {max-width:68rem;margin:auto;padding:clamp(1rem,4vw,3rem);}
+    .guide-panel {background:rgba(8,12,20,.96);border:1px solid var(--panel-border);border-radius:20px;padding:clamp(1.2rem,4vw,3rem);}
+    .guide a {color:var(--link);}
+    .guide h1 {font-size:clamp(2rem,5vw,3.5rem);line-height:1.05;margin:.7rem 0;}
+    .guide h2 {font-size:1.5rem;margin-top:2.2rem;}
+    .guide h3 {font-size:1.15rem;margin-top:0;}
+    .guide p,.guide li {font-size:1rem;}
+    .guide .eyebrow {color:var(--accent);font-weight:700;letter-spacing:.08em;font-size:.875rem;}
+    .guide .lead {max-width:48rem;}
+    .guide .btn {color:var(--text);min-height:48px;display:inline-flex;align-items:center;justify-content:center;}
+    .builds {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1rem;margin-top:1.3rem;}
+    .build {border:1px solid var(--panel-border);padding:1.1rem;border-radius:12px;background:#101925;}
+    .build .btn {width:100%;}
+    .guide .facts {padding:1rem 1.25rem;border-left:3px solid var(--accent);background:#111f21;}
+    .guide nav {display:flex;gap:1rem;flex-wrap:wrap;}
+    .guide a:focus-visible {outline:3px solid var(--accent);outline-offset:4px;}
+    @media(max-width:900px) {.builds {grid-template-columns:1fr;} .build {display:grid;grid-template-columns:10rem 1fr;gap:0 1rem;} .build h3 {grid-column:1/-1;} .build p {margin-top:0;} .build .btn {align-self:start;}}
+    @media(max-height:450px) {.guide {padding:1rem;} .guide-panel {padding:1.2rem;} .guide h1 {font-size:2rem;}}
+  </style>
+</head>
+<body>
+  <main class="guide">
+    <article class="guide-panel">
+      <nav aria-label="Guide navigation"><a href="./">Angry Axies home</a><a href="#builds">Play &amp; install</a><a href="#axie-core">Axie Core</a></nav>
+      <p class="eyebrow">AXIE VIBEATHON 2026 · GAME GUIDE</p>
+      <h1>Build it. Defend it.<br>Destroy it.</h1>
+      <p class="lead">Angry Axies is a physics-based build-and-battle game. Create your Axie, design a fortress, then find the shot that brings your opponent’s defenses crashing down.</p>
+      <p class="facts"><strong>Always play in landscape.</strong> On desktop, drag with the mouse to aim and release to fire. On phones and tablets, use the same gesture with your finger.</p>
+      <section id="builds" aria-labelledby="build-heading">
+        <h2 id="build-heading">Choose where to play</h2>
+        <div class="builds">
+          <section class="build">
+            <h3>Browser</h3>
+            <a class="btn" href="https://angryaxies.servehttp.com/">Play in browser</a>
+            <p>Wait for loading, select <strong>Play / JUGAR</strong>, then <strong>Story / Historia</strong>. Windows and macOS players use this version without a desktop installer. Chrome is recommended.</p>
+          </section>
+          <section class="build">
+            <h3>Android</h3>
+            <a class="btn secondary" href="https://play.google.com/store/apps/details?id=com.maxicoria.angryaxies">Get it on Google Play</a>
+            <p>Open Google Play on a compatible Android device, install Angry Axies, then launch it in landscape. Wait for loading and select Play. Google Play determines device and regional availability.</p>
+          </section>
+          <section class="build">
+            <h3>iPhone &amp; iPad</h3>
+            <a class="btn secondary" href="https://apps.apple.com/ar/app/angry-axies/id6797042769">Get it on the App Store</a>
+            <p>Requires iOS/iPadOS 15.0 or later. Install, launch in landscape, and select Play after loading. The App Store determines availability. The app is not verified for native macOS use.</p>
+          </section>
+        </div>
+        <p>Keep an internet connection available to load content and use online features. Guest play is available; use the same device and browser to retain local progress. Game languages: English, Spanish, Japanese, and Filipino.</p>
+      </section>
+      <section aria-labelledby="try-heading">
+        <h2 id="try-heading">Your first session</h2>
+        <ol>
+          <li><strong>Try Story.</strong> Aim at structural weak points, collapse towers, and improve your score.</li>
+          <li><strong>Open the Laboratory.</strong> Choose a class, body, and six parts. Name and save your Axie, then equip it.</li>
+          <li><strong>Explore 1vs1.</strong> Build a fortress and discover how your design holds up against an opponent.</li>
+        </ol>
+      </section>
+      <section aria-labelledby="vision-heading">
+        <h2 id="vision-heading">Product vision</h2>
+        <p>We want Angry Axies to be easy to start and rewarding to master. Players express themselves through the Axies they create, the fortresses they build, and the shots they master. The loop is simple: build, test, attack, learn, and improve.</p>
+        <p>The campaign teaches precision and structural thinking; player-built fortresses and PvP provide new problems to solve. Our long-term goal is a community-driven game, with new challenges, building options, and balance improvements informed by player feedback. A smooth landscape experience on browser, iPhone, and Android is central to that vision.</p>
+      </section>
+      <section id="axie-core" aria-labelledby="core-heading">
+        <h2 id="core-heading">Axie identity with a gameplay purpose</h2>
+        <p>The Axie Laboratory uses the Axie Mixer SDK to offer <strong>9 classes, 13 body shapes, and 606 parts</strong> across eyes, mouths, ears, horns, backs, and tails, including evolved, Mystic, and special visual variants. Class and body shape are independent choices. Players can name their creation, equip it for play, and use it as their avatar.</p>
+        <p>In PvP, the six selected part families determine combat attributes: Plant adds health; Aquatic reduces damaging explosion waves; Beast reduces structural-impact damage; Reptile reduces projectile damage; Bird reduces fall damage; and Bug reduces Double Shot and Ghost attack damage. Ordinary explosion waves that only push an Axie do not deal health damage.</p>
+        <p>Health upgrades remain when a player changes their design, and saved designs integrate with the existing account progress system. Part-based bonuses and resistances apply in PvP. Laboratory creations are in-game designs: choosing rare visual parts does not mint an NFT or prove ownership of an existing Axie NFT.</p>
+      </section>
+      <footer>
+        <p><a href="https://www.youtube.com/shorts/jCC6-XViKIw">Watch the gameplay video</a> · <a href="https://discord.gg/t5eHqyqyAf">Join the community</a></p>
+        <p>Browser menu verified on September 8, 2026: v1.633. Store releases follow their own versioning and update schedules.</p>
+      </footer>
+    </article>
+  </main>
+</body>
+</html>
