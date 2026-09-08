@@ -22,6 +22,12 @@
     .build .btn {width:100%;}
     .guide .facts {padding:1rem 1.25rem;border-left:3px solid var(--accent);background:#111f21;}
     .guide nav {display:flex;gap:1rem;flex-wrap:wrap;}
+    .guide .guide-languages {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:.5rem;padding-bottom:1.2rem;margin-bottom:1.2rem;border-bottom:1px solid var(--panel-border);}
+    .guide-languages button {min-height:44px;padding:.65rem .8rem;border:1px solid var(--panel-border);border-radius:9px;background:#101925;color:var(--muted);font:600 .95rem "Segoe UI",system-ui,sans-serif;cursor:pointer;transition:background .15s,border-color .15s;}
+    .guide-languages button:hover {background:#172b2b;border-color:#3d7960;}
+    .guide-languages button[aria-pressed="true"] {background:#163c2b;border-color:var(--accent);color:#adf5c2;}
+    .guide-languages button:focus-visible {outline:3px solid var(--accent);outline-offset:3px;}
+    @media(prefers-reduced-motion:reduce) {.guide-languages button {transition:none;}}
     .guide a:focus-visible {outline:3px solid var(--accent);outline-offset:4px;}
     @media(max-width:900px) {.builds {grid-template-columns:1fr;} .build {display:grid;grid-template-columns:10rem 1fr;gap:0 1rem;} .build h3 {grid-column:1/-1;} .build p {margin-top:0;} .build .btn {align-self:start;}}
     @media(max-height:450px) {.guide {padding:1rem;} .guide-panel {padding:1.2rem;} .guide h1 {font-size:2rem;}}
@@ -30,6 +36,12 @@
 <body>
   <main class="guide">
     <article class="guide-panel">
+      <nav class="guide-languages" aria-label="Language">
+        <button type="button" lang="en" data-guide-lang="en" aria-pressed="true">English</button>
+        <button type="button" lang="es" data-guide-lang="es" aria-pressed="false">Español</button>
+        <button type="button" lang="zh-Hans" data-guide-lang="zh" aria-pressed="false">中文</button>
+        <button type="button" lang="fil" data-guide-lang="fil" aria-pressed="false">Filipino</button>
+      </nav>
       <nav aria-label="Guide navigation"><a href="./">Angry Axies home</a><a href="#builds">Play &amp; install</a><a href="#axie-core">Axie Core</a></nav>
       <p class="eyebrow">AXIE VIBEATHON 2026 · GAME GUIDE</p>
       <h1>Build it. Defend it.<br>Destroy it.</h1>
@@ -81,5 +93,6 @@
       </footer>
     </article>
   </main>
+  <script src="./vibeathon-i18n.js"></script>
 </body>
 </html>
