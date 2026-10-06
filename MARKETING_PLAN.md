@@ -1,7 +1,7 @@
 # Plan de marketing — Angry Axies
 
 Documento vivo. Se itera en loop; cada iteración registra su cambio en el historial al final.
-Versión actual: **v1** (2026-10-06).
+Versión actual: **v2** (2026-10-06).
 
 ## 1. Punto de partida (hechos verificados en el repo)
 
@@ -92,6 +92,14 @@ Panel semanal: sesiones, conversión web → instalación, D1/D7, clips con mayo
 3. Enlaces de redes, Discord y video oficial.
 4. Presupuesto real y quién produce los clips.
 
+## Anexo v2 — Vibeathon (fuentes públicas)
+
+- Ronda 1: 8-21 sep; hasta 8 finalistas pasan a la Ronda 2 (4-31 oct); ganadores el 5 nov. Fuente: [egamers.io](https://egamers.io/?p=112700).
+- Puntaje Ronda 1: encaje con Axie Core 35 %, jugabilidad 25 %, visión de producto 20 %, factibilidad 10 %, prototipo y documentación 10 %. Los likes y comentarios del Games Hub **no puntúan** en el jurado, pero sirven de feedback.
+- Implicación: la ventana útil de marketing ligada al concurso termina el 5-nov. Hasta entonces, priorizar claridad de la guía, estabilidad del juego y feedback de comunidad. Después, pasar a retención y tiendas.
+- El Games Hub de Axie ejecuta la mayoría de los juegos en el navegador: conviene que el "jugar ya" de Angry Axies cargue rápido y en landscape.
+
 ## Historial de iteraciones
 
 - **v1 (2026-10-06)**: plan inicial a partir del repo y de la búsqueda sobre el Vibeathon.
+- **v2 (2026-10-06)**: calendario y criterios del Vibeathon; implicaciones para el timing.
